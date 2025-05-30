@@ -21,7 +21,6 @@
 .homeContainer {
   position: relative;
   display: flex;
-  border: 2px palegreen solid;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -35,7 +34,6 @@
   top: 2.5rem;
   z-index: 1;
   text-align: center;
-  border: 2px red solid;
   z-index: 1;
   font-size: 3rem;
   padding: 2rem;
