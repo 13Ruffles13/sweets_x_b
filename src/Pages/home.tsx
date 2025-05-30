@@ -13,7 +13,7 @@ function Home() {
           alt="sweetsxb home page background"
         />
         <div className="sweetsLogoContainer">
-          <img id="sweetsxb_logo" src={sweetsLogo} alt="Sweets x B Logo" />
+          <img id="sweetsxb_logo" src={sweetsLogoTransparent} alt="Sweets x B Logo" />
           <h2>Sweet Treats made from Scratch</h2>
           <h5>We got you!</h5>
         </div>
