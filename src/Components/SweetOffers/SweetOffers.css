@@ -1,0 +1,33 @@
+.sweetOffersMainContainer{
+    display: grid;
+    background: var(--sweetPink);
+    padding-bottom: 2rem;
+}
+
+.sweetOffersMainContainer h1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+.offersTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offersTable, .offersTableHeaders{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.offersContainerBorder{
+    border: 2px solid var(--darkBlack);
+    padding: 10rem;
+}
