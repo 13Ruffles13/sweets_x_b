@@ -1,17 +1,47 @@
-.mainPastryShowCaseContainer{
-    background-color: var(--whiteSnow);
-    display: grid;
+.mainPastryShowCaseContainer {
+  background-color: var(--whiteSnow);
+  display: grid;
 }
 
-.showCaseCol1{
-    width: 50%;
+.showCaseCol1 {
+  width: 50%;
 }
 
-.showCaseCol2{
-    width: 50%;
+.showCaseCol2 {
+  width: 50%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-#pastryTitle{
-    font-size: 6.5rem;
-    margin: 0;
+.showCaseCol2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#pastryTitle {
+  font-size: 6.5rem;
+  margin: 0;
+}
+
+th {
+  padding: 0;
+  vertical-align: top;
+  height: 100%;
+}
+
+table {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.pastryFeedText{
+    text-indent: .5rem;
+    font-size: 1.35rem;
 }
