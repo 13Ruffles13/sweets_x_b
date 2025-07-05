@@ -16,6 +16,8 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  /* Adjust brightness */
+  filter: brightness(78%);
 }
 
 .homeContainer {
