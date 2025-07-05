@@ -1,0 +1,17 @@
+.mainPastryShowCaseContainer{
+    background-color: var(--whiteSnow);
+    display: grid;
+}
+
+.showCaseCol1{
+    width: 50%;
+}
+
+.showCaseCol2{
+    width: 50%;
+}
+
+#pastryTitle{
+    font-size: 6.5rem;
+    margin: 0;
+}

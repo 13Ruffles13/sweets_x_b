@@ -8,10 +8,10 @@ function Quotes() {
           {" "}
           <>&#129293;</>
         </div>
-        <div id="whiteSweetQuote">
+        <h1 id="whiteSweetQuote">
           Baked with the finest natural ingredients. Delivered fresh from the
           oven. Perfection
-        </div>
+        </h1>
         <div className="whiteSugarHeart">
           {" "}
           <>&#129293;</>
