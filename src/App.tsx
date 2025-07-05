@@ -1,11 +1,11 @@
-import Home from "./Pages/home";
+import Routes from "./Routes/routes";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="mainContainer">
-        <Home />
+        <Routes />
       </div>
     </>
   );
