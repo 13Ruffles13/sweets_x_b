@@ -21,9 +21,9 @@
   display: flex;
 }
 
-.sweetOptionsTable th{
-    border-top-style: none;
-    border-top-width: none;
+.sweetOptionsTable th {
+  border-top-style: none;
+  border-top-width: none;
 }
 
 .sweetImage {
@@ -37,6 +37,7 @@
   border: 2px solid var(--darkBlack);
   object-fit: fill;
   border-radius: 35%;
-  width: 450px;
-  height: 500px;
+  width: 460px;
+  height: 510px;
+  filter: brightness(78%);
 }
