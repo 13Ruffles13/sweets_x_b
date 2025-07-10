@@ -1,0 +1,42 @@
+.sweetOptionsMainContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sweetOptionsMainContainer {
+  height: 0;
+}
+
+.sweetOptionsMainContainer h1 {
+  color: var(--sweetPink);
+  font-size: 4rem;
+  padding: 0.5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sweetOptionsTable {
+  display: flex;
+}
+
+.sweetOptionsTable th{
+    border-top-style: none;
+    border-top-width: none;
+}
+
+.sweetImage {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sweetImage tr img {
+  border: 2px solid var(--darkBlack);
+  object-fit: fill;
+  border-radius: 35%;
+  width: 450px;
+  height: 500px;
+}
