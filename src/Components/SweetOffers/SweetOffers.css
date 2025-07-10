@@ -29,5 +29,14 @@
 
 .offersContainerBorder{
     border: 2px solid var(--darkBlack);
-    padding: 10rem;
+    margin: .5rem;
+}
+
+.offersContainerBorder h1{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.offersContainerBorder .whiteSugarHeart{
+    padding: 1rem;
 }
