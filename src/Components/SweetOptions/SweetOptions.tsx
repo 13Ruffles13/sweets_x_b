@@ -11,7 +11,10 @@ function SweetOptions() {
         <th className="sweetImage">
           <tr>
             <div>
-              <h2>Beignets</h2>
+              <div className="sweetImageDetails">
+                <h2>Beignets</h2>
+                <p>Heavenly pastry creations that will satisfy your cravings</p>
+              </div>
               <img src={SweetBeignets} alt="Sweet Beignets" />
             </div>
           </tr>
@@ -19,7 +22,10 @@ function SweetOptions() {
         <th className="sweetImage">
           <tr>
             <div>
-              <h2>BlueBerry Muffins</h2>
+              <div className="sweetImageDetails">
+                <h2>Blueberry Muffins</h2>
+                <p>Deliciously decadent cookies that are sure to impress</p>
+              </div>
               <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
             </div>
           </tr>
@@ -27,7 +33,10 @@ function SweetOptions() {
         <th className="sweetImage">
           <tr>
             <div>
-              <h2>Yellow Cake</h2>
+              <div className="sweetImageDetails">
+                <h2>Yellow Cake</h2>
+                <p>Freshly-baked loaves of bread you'll find irresistible</p>
+              </div>
               <img src={SweetYellowCake} alt="Sweet Yellow Cake" />
             </div>
           </tr>
