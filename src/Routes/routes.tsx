@@ -4,6 +4,7 @@ import PastryShowCase from "../Components/PastryShowCase/pastryShowCase";
 import SweetOffers from "../Components/SweetOffers/SweetOffers";
 import SweetOptions from "../Components/SweetOptions/SweetOptions";
 import Footer from "../Components/Footer/Footer";
+import ContactFooter from "../Components/ContactFooter/ContactFooter"
 
 function Routes() {
   return (
@@ -14,6 +15,7 @@ function Routes() {
       <SweetOffers />
       <SweetOptions />
       <Footer />
+      <ContactFooter />
     </>
   );
 }

@@ -1,0 +1,12 @@
+.contactFooterCotent {
+  display: flex;
+  height: 100%;
+  background-color: var(--darkBlack);
+  color: var(--whiteSnow);
+}
+
+.footerCotent {
+  width: 100%;
+  margin-left: 5rem;
+  padding-top: 2rem;
+}
