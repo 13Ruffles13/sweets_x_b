@@ -7,10 +7,6 @@
   height: 10%;
 }
 
-.sweetOptionsMainContainer {
-  height: 0;
-}
-
 .sweetOptionsMainContainer h1 {
   color: var(--sweetPink);
   font-size: 4rem;

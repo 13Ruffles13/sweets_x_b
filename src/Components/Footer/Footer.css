@@ -1,0 +1,25 @@
+.FooterLogoWrapper {
+  position: absolute;
+  top: 10rem;
+}
+
+.FooterContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+#sweetFooter {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  /* Adjust brightness */
+  filter: brightness(70%);
+}
