@@ -2,9 +2,10 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  height: 120vh;
 }
 .sweetOptionsMainContainer .sweetOptionsTable{
-  height: 10%;
+  height: 45%;
 }
 
 .sweetOptionsMainContainer h1 {
@@ -41,7 +42,7 @@
   object-fit: fill;
   border-radius: 35%;
   width: 480px;
-  height: 480px;
+  height: 470px;
   filter: brightness(82%);
 }
 

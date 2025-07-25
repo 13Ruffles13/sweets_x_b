@@ -1,7 +1,9 @@
 .sweetOffersMainContainer{
     display: grid;
     background: var(--sweetPink);
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    height: 120vh;
+    color: var(--whiteSnow);
 }
 
 .sweetOffersMainContainer h1{
@@ -9,9 +11,13 @@
     align-items: center;
     justify-content: center;
     padding: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 4rem;
     letter-spacing: 5px;
     word-spacing: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .offersTable{
@@ -25,11 +31,15 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    bottom: 4rem;
+    position: relative;
 }
 
 .offersContainerBorder{
     border: 2px solid var(--darkBlack);
-    margin: .5rem;
+    margin: 4rem;
+    padding: 2rem;
+    height: 400px
 }
 
 .offersContainerBorder h1{
@@ -39,4 +49,10 @@
 
 .offersContainerBorder .whiteSugarHeart{
     padding: 1rem;
+}
+
+.offersContainerBorder p{
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

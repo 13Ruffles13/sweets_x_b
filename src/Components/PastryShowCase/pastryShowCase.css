@@ -1,6 +1,7 @@
 .mainPastryShowCaseContainer {
   background-color: var(--whiteSnow);
   display: grid;
+  height: 120vh;
 }
 
 .showCaseCol1 {
@@ -25,6 +26,7 @@
 #pastryTitle {
   font-size: 6.5rem;
   margin: 0;
+  padding-bottom: 5rem;
 }
 
 th {
@@ -43,5 +45,7 @@ table {
 
 .pastryFeedText{
     text-indent: .5rem;
-    font-size: 1.35rem;
+    font-size: 1.85rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }

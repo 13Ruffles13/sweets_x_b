@@ -1,6 +1,7 @@
 .quotesMainContainer{
     background: var(--sweetPink);
     display: grid;
+    height: 120vh;
 }
 
 .whiteSugarHeart{
