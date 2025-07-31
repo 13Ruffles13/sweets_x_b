@@ -12,7 +12,7 @@ function PastryShowCase() {
               <>&#129293;</>
             </div>
             <h1 id="pastryTitle">
-              Pastry <br /> Perfection
+              PASTRY <br /> PERFECTION
             </h1>
             <p className="pastryFeedText">
               Discover deliciousness at Chervet Bakery. Imagine biting into a

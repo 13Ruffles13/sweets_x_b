@@ -4,21 +4,25 @@
   justify-content: center;
   height: 120vh;
 }
-.sweetOptionsMainContainer .sweetOptionsTable{
+.sweetOptionsMainContainer .sweetOptionsTable {
   height: 45%;
 }
 
 .sweetOptionsMainContainer h1 {
   color: var(--sweetPink);
   font-size: 4rem;
-  padding: 0.5rem;
+  padding: 0;
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 0;
+  margin: 0;
 }
-
+.sweetImageContainer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 10rem;
+}
 .sweetOptionsTable {
   display: flex;
 }
@@ -30,7 +34,9 @@
 
 .sweetImage {
   display: flex;
-  margin: 1rem;
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
   align-items: center;
   justify-content: center;
   z-index: 0;

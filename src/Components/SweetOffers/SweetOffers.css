@@ -31,13 +31,15 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    bottom: 4rem;
+    bottom: 10rem;
     position: relative;
 }
 
 .offersContainerBorder{
     border: 2px solid var(--darkBlack);
-    margin: 4rem;
+    margin: 10rem;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 2rem;
     height: 400px
 }

@@ -10,7 +10,7 @@ function SweetOptions() {
       <table className="sweetOptionsTable">
         <th className="sweetImage">
           <tr>
-            <div>
+            <div className="sweetImageContainer">
               <div className="sweetImageDetails">
                 <h2>Beignets</h2>
                 <p>Heavenly pastry creations that will satisfy your cravings</p>
@@ -21,7 +21,7 @@ function SweetOptions() {
         </th>
         <th className="sweetImage">
           <tr>
-            <div>
+            <div className="sweetImageContainer">
               <div className="sweetImageDetails">
                 <h2>Blueberry Muffins</h2>
                 <p>Deliciously decadent cookies that are sure to impress</p>
@@ -32,7 +32,7 @@ function SweetOptions() {
         </th>
         <th className="sweetImage">
           <tr>
-            <div>
+            <div className="sweetImageContainer">
               <div className="sweetImageDetails">
                 <h2>Yellow Cake</h2>
                 <p>Freshly-baked loaves of bread you'll find irresistible</p>
