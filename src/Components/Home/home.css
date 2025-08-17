@@ -51,7 +51,7 @@
   font-size: 1.2rem;
 }
 
-/* Small devices */
+/* Small devices (≥ 576px)*/
 @media (min-width: 576px) {
   #sweetsxb_logo {
     width: 30vw;
@@ -62,5 +62,47 @@
   }
   .sweetsLogoContainer h5 {
     font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (≥ 768px)*/
+@media (min-width: 768px) {
+  #sweetsxb_logo {
+    width: 25vw;
+    max-width: 320px;
+  }
+  .sweetsLogoContainer h2 {
+    font-size: 3.5rem;
+  }
+  .sweetsLogoContainer h5 {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (≥ 992px)*/
+@media (min-width: 992px) {
+  #sweetsxb_logo {
+    width: 20vw;
+    max-width: 350px;
+  }
+  .sweetsLogoContainer h2 {
+    font-size: 4.2rem;
+  }
+  .sweetsLogoContainer h5 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra large devices (≥ 1200px)*/
+@media (min-width: 1200px) {
+  #sweetsxb_logo {
+    width: 18vw;
+    max-width: 400px;
+  }
+  .sweetsLogoContainer h2 {
+    font-size: 5rem;
+  }
+  .sweetsLogoContainer h5 {
+    font-size: 3rem;
   }
 }
