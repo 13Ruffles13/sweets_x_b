@@ -21,7 +21,6 @@
   filter: brightness(78%);
 }
 
-
 .sweetsLogoContainer {
   position: relative;
   top: 1rem;
@@ -52,57 +51,16 @@
   font-size: 1.2rem;
 }
 
-/*Website Responsive*/
-@media (max-width: 575.98px) {
+/* Small devices */
+@media (min-width: 576px) {
   #sweetsxb_logo {
-    width: 30vh;
-    height: 26.5vh;
-    border-radius: 50%;
-    border: 4.2px solid var(--sweetPink);
-    background-color: var(--whiteSnow);
-    overflow: hidden;
-    filter: brightness(1.05) contrast(1.02) opacity(0.97);
+    width: 30vw;
+    max-width: 280px;
   }
-
-  #breadBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    /* Adjust brightness */
-    filter: brightness(78%);
-  }
-
-  .homeContainer {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .sweetsLogoContainer {
-    position: relative;
-    top: 2.5rem;
-    z-index: 1;
-    text-align: center;
-    z-index: 1;
-    font-size: 3rem;
-    padding: 2rem;
-    color: var(--whiteSnow);
-  }
-
   .sweetsLogoContainer h2 {
-    font-size: 5rem;
-    letter-spacing: 0.1rem;
+    font-size: 2.8rem;
   }
-
   .sweetsLogoContainer h5 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 }
