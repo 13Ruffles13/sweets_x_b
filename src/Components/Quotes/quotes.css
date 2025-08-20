@@ -1,24 +1,80 @@
-.quotesMainContainer{
-    background: var(--sweetPink);
-    display: grid;
-    height: 120vh;
+/* Base (mobile first) */
+
+.quotesMainContainer {
+  background: var(--sweetPink);
+  display: grid;
+  place-items: center; /* Centers content both ways */
+  height: auto; /* Let content define height on small screens */
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
 }
 
-.whiteSugarHeart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6rem;
+.whiteSugarHeart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 2.5rem; /* Smaller for mobile */
+}
+
+#whiteSweetQuote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 2rem;
+  color: var(--whiteSnow);
+  text-indent: 0.3rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  flex-wrap: wrap; /* Prevent text overflow */
+}
+
+/* Small devices (≥ 576px) */
+@media (min-width: 576px) {
+  .whiteSugarHeart {
+    font-size: 3rem;
+    padding: 3rem;
+  }
+  #whiteSweetQuote {
+    font-size: 2.5rem;
+    padding: 3rem;
+  }
+}
+
+/* Medium devices (≥ 768px) */
+@media (min-width: 768px) {
+  .whiteSugarHeart {
+    font-size: 3.5rem;
+    padding: 4rem;
+  }
+  #whiteSweetQuote {
+    font-size: 3.5rem;
+    padding: 4rem;
+  }
+}
+
+/* Large devices (≥ 992px) */
+@media (min-width: 992px) {
+  .whiteSugarHeart {
     font-size: 4rem;
+    padding: 5rem;
+  }
+  #whiteSweetQuote {
+    font-size: 5rem;
+    padding: 5rem;
+  }
 }
 
-#whiteSweetQuote{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Extra large devices (≥ 1200px) */
+@media (min-width: 1200px) {
+  .whiteSugarHeart {
+    font-size: 4.5rem;
     padding: 6rem;
+  }
+  #whiteSweetQuote {
     font-size: 6rem;
-    color: var(--whiteSnow);
-    text-indent: .5rem;
-    letter-spacing: 0.1rem;
+    padding: 6rem;
+  }
 }
