@@ -55,8 +55,8 @@
   transition: transform 0.3s ease;
 }
 
-.offersContainerBorder:hover{
-    transform: translateY(-5px);
+.offersContainerBorder:hover {
+  transform: translateY(-5px);
 }
 
 .offersContainerBorder h2 {
@@ -80,4 +80,60 @@
   line-height: 1.5;
   /* margin-top: 3rem;
   margin-bottom: 3rem; */
+}
+
+/* Responsive Breakpoints */
+
+@media (min-width: 576px) {
+  .offersTable {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .offersContainerBorder {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sweetOffersMainContainer h1 {
+    font-size: 3rem;
+  }
+
+  .offersTable {
+    gap: 2.5rem;
+  }
+
+  .offersContainerBorder h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .offersTable {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+  }
+
+  .sweetOffersMainContainer h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sweetOffersMainContainer {
+    padding: 5rem 2rem;
+  }
+
+  .offersTable {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+
+  .sweetOffersMainContainer h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+  }
 }
