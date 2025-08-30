@@ -1,60 +1,83 @@
-.sweetOffersMainContainer{
-    display: grid;
-    background: var(--sweetPink);
-    padding-bottom: 3rem;
-    height: 120vh;
-    color: var(--whiteSnow);
+.sweetOffersMainContainer {
+  display: grid;
+  background: var(--sweetPink);
+  padding: 3rem 1rem;
+  color: var(--whiteSnow);
+  min-height: 100vh;
 }
 
-.sweetOffersMainContainer h1{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem;
+.sweetOffersMainContainer h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 5rem;
     padding-top: 0;
-    padding-bottom: 0;
-    font-size: 4rem;
-    letter-spacing: 5px;
-    word-spacing: 20px;
+    padding-bottom: 0; */
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  margin-top: 0 0 2rem;
+  text-align: center;
+}
+
+/* Grid layout for offers */
+.offersTable {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+/* .offersTable,
+.offersTableHeaders {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 10rem;
+  position: relative;
+} */
+
+/* Card Container */
+.offersContainerBorder {
+  border: 2px solid var(--darkBlack);
+  border-radius: 1rem;
+  /* margin: 10rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; */
+  padding: 2rem;
+  /* height: 400px; */
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.offersTable{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.offersContainerBorder:hover{
+    transform: translateY(-5px);
 }
 
-.offersTable, .offersTableHeaders{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    bottom: 10rem;
-    position: relative;
-}
-
-.offersContainerBorder{
-    border: 2px solid var(--darkBlack);
-    margin: 10rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 2rem;
-    height: 400px
-}
-
-.offersContainerBorder h1{
-    font-size: 3rem;
-    padding: 1.5rem;
-}
-
-.offersContainerBorder .whiteSugarHeart{
-    padding: 1rem;
-}
-
-.offersContainerBorder p{
+.offersContainerBorder h2 {
   font-size: 1.8rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* .offersContainerBorder h1 {
+  font-size: 3rem;
+  padding: 1.5rem;
+} */
+
+.offersContainerBorder .whiteSugarHeart {
+  /* padding: 1rem; */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.offersContainerBorder p {
+  font-size: 1rem;
+  line-height: 1.5;
+  /* margin-top: 3rem;
+  margin-bottom: 3rem; */
 }
