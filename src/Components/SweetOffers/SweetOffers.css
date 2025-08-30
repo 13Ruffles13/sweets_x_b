@@ -112,7 +112,7 @@
 @media (min-width: 992px) {
   .offersTable {
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.5rem;
+    gap: 5rem;
   }
 
   .sweetOffersMainContainer h1 {
@@ -128,7 +128,7 @@
   .offersTable {
     max-width: 1200px;
     margin: 0 auto;
-    gap: 5rem;
+    gap: 8rem;
   }
 
   .sweetOffersMainContainer h1 {
