@@ -1,73 +1,140 @@
 .sweetOptionsMainContainer {
+  padding: 2rem 1rem;
   display: grid;
-  align-items: center;
   justify-content: center;
-  height: 120vh;
-}
-.sweetOptionsMainContainer .sweetOptionsTable {
-  height: 45%;
+  text-align: center;
+  min-height: 100vh; /* replaced fixed 120vh with flexible */
 }
 
 .sweetOptionsMainContainer h1 {
   color: var(--sweetPink);
-  font-size: 4rem;
-  padding: 0;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-.sweetImageContainer {
-  margin: 0;
-  padding: 0;
+  font-size: 2.5rem;
+  margin: 0 0 6.25rem;
   position: relative;
-  bottom: 10rem;
-}
-.sweetOptionsTable {
-  display: flex;
+  top: 5.5rem;
 }
 
-.sweetOptionsTable th {
-  border-top-style: none;
-  border-top-width: none;
+/* Grid container */
+.sweetOptionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
 }
 
-.sweetImage {
-  display: flex;
-  margin: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  align-items: center;
-  justify-content: center;
-  z-index: 0;
-  height: 0%;
+/* Each card */
+.sweetImageContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.sweetImage tr img {
-  border: 2px solid var(--darkBlack);
-  object-fit: fill;
-  border-radius: 35%;
-  width: 480px;
-  height: 470px;
+.sweetImageContainer:hover {
+  transform: translateY(-6px);
+}
+
+.sweetImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 2rem;
   filter: brightness(82%);
 }
 
+/* Text overlay */
 .sweetImageDetails {
-  display: block;
-  position: relative;
-  top: 240px;
-  z-index: 1;
-  font-size: 2rem;
-  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
   color: var(--whiteSnow);
+  z-index: 1;
+  text-align: left;
 }
 
-.sweetImageDetails,
-h2,
-p {
-  margin: 0;
+.sweetImageDetails h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .sweetImageDetails p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* -------------------- Responsive Breakpoints -------------------- */
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .sweetOptionsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .sweetOptionsMainContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 100px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .sweetOptionsGrid {
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+
+  .sweetOptionsMainContainer h1 {
+    margin-bottom: 100px;
+  }
+
+  .sweetImageDetails h2 {
+    font-size: 1.75rem;
+  }
+
+  .sweetImageDetails p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .sweetOptionsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+    height: auto;
+  }
+
+  .sweetOptionsMainContainer h1 {
+    font-size: 3.5rem;
+    position: relative;
+    top: 5.5rem;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .sweetOptionsMainContainer {
+    padding: 4rem 2rem;
+  }
+
+  .sweetOptionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  .sweetOptionsMainContainer h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+  }
 }
