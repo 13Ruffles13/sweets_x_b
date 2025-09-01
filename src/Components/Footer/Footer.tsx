@@ -1,19 +1,13 @@
 import "./Footer.css";
-import sweetsLogoTransparent from "../../assets/Sweets_x_B_logo_noBackground.png";
-import sweetFooter from "../../assets/Sweet_Footer.jpg";
+import sweetsLogoTransparent from "../../assets/Sweets_x_B_logo_icon.svg";
 
 function Footer() {
   return (
     <div className="FooterMainContainer">
       <div className="FooterContent">
-        <img
-          id="sweetFooter"
-          src={sweetFooter}
-          alt="sweetFooter chocolate bar and red berry"
-        />
         <div className="FooterLogoWrapper">
           <img
-            id="sweetsxb_logo"
+            id="sweetsxb_logo_footer"
             src={sweetsLogoTransparent}
             alt="Sweets x B Logo"
           />

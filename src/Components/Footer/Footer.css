@@ -1,26 +1,66 @@
-/*TODO: Set props for instagram & Spacing from other content (CANVA)*/
+.FooterMainContainer {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 
-.FooterLogoWrapper {
-  position: absolute;
-  top: 10rem;
+  /* background footer image */
+  background: url("../../assets/Sweet_Footer.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .FooterContent {
-  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
 }
 
-#sweetFooter {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  z-index: 0;
-  /* Adjust brightness */
-  filter: brightness(70%);
+#sweetsxb_logo_footer {
+  width: 60vw;
+  max-width: 180x;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid var(--sweetPink);
+  background-color: var(--whiteSnow);
+  overflow: hidden;
+  filter: brightness(1.05) contrast(1.02) opacity(0.97);
+}
+
+/* Small Tablets (≥ 481px) */
+@media (min-width: 481px) {
+  .FooterMainContainer {
+    min-height: 180px;
+    padding: 15px;
+  }
+
+  #sweetsxb_logo_footer {
+    width: 50vw;
+    max-width: 200px;
+  }
+}
+
+/* Larger Tablets & Small Laptops (≥ 769px) */
+@media (min-width: 769px) {
+  .FooterMainContainer {
+    min-height: 190px;
+  }
+
+  #sweetsxb_logo_footer {
+    width: 25vw;
+    max-width: 220px;
+  }
+}
+
+/* Desktop (≥ 1025px) */
+@media (min-width: 1025px) {
+  .FooterMainContainer {
+    min-height: 220px;
+  }
+
+  #sweetsxb_logo_footer {
+    width: 20vw;
+    max-width: 250px;
+  }
 }
