@@ -1,10 +1,10 @@
-# Deploy Vite React app to GitHub Pages
-name: Deploy static content to Pages
+# Deploy Vite React app to GitHub Pages automatically
+name: Deploy Vite React app to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"] # Triggers on every push to main
+  workflow_dispatch: # Allows manual trigger if needed
 
 permissions:
   contents: read
@@ -17,15 +17,12 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
@@ -37,13 +34,13 @@ jobs:
       - name: Build Vite app
         run: npm run build
 
-      - name: Setup Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload dist
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: ./dist # Upload everything from the dist folder
 
       - name: Deploy to GitHub Pages
         id: deployment
