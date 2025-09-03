@@ -37,7 +37,7 @@
   }
 }
 
-/* Larger tablets (≥ 768px) */
+/*  Larger tablets (≥ 768px)  */
 @media (min-width: 768px) {
   .footerContent {
     margin: 0 2rem;
