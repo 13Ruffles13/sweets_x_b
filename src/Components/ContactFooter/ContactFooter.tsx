@@ -1,22 +1,32 @@
 import "./ContactFooter.css";
+import SweetXB_InstagramIcon from "../../assets/contact-icons//icons8-instagram-50-white.png";
 
 function ContactFooter() {
   return (
-    <div className="mainContactFooter">
-      <div className="contactFooterCotent">
-        <div className="footerCotent">
-          {" "}
+    <footer className="mainContactFooter">
+      <div className="contactFooterContent">
+        <div className="footerContent">
           <h2>Find us here</h2>
-          <h3>Sweets.X.B@gmail.com</h3>
+          <address>
+            <p>SweetsXB@gmail.com</p>
+            <p>(699) 263-1514</p>
+          </address>
         </div>
-        <div className="footerCotent">
-          {" "}
-          <h2>SomeAddress 24156, someCity CA, 95600</h2>
-          <h3>000-000-000</h3>
+        <div className="footerContent">
+          <a
+            href="https://www.instagram.com/sweetsssxb/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              id="InstagramIcon"
+              src={SweetXB_InstagramIcon}
+              alt="Instagram"
+            />
+          </a>
         </div>
-        <div className="footerCotent"><h3>Instagram Icon</h3></div>
       </div>
-    </div>
+    </footer>
   );
 }
 
