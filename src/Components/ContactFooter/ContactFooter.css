@@ -48,7 +48,7 @@
   }
 }
 
-/* Desktop (≥ 1200px) */
+/*  Desktop (≥ 1200px)  */
 @media (min-width: 1200px) {
   .contactFooterContent {
     padding: 2rem 5rem;
