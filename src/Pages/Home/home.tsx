@@ -1,4 +1,4 @@
-import sweetsLogoTransparent from "../../Assets/Sweets_x_B_logo_noBackground.png";
+import sweetsLogoTransparent from "../../Assets/Sweets_x_B_logo.jpg";
 import breadBackground from "../../Assets/bread-1281053_1920.jpg";
 import "./home.css";
 
