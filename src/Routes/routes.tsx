@@ -4,7 +4,7 @@ import PastryShowCase from "../Pages/PastryShowCase/pastryShowCase";
 import SweetOffers from "../Pages/SweetOffers/SweetOffers";
 import SweetOptions from "../Pages/SweetOptions/SweetOptions";
 import Footer from "../Pages/Footer/Footer";
-import ContactFooter from "../Pages/ContactFooter/ContactFooter"
+import ContactFooter from "../Pages/ContactFooter/ContactFooter";
 
 function Routes() {
   return (
