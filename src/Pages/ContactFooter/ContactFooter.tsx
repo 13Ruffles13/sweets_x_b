@@ -1,5 +1,5 @@
 import "./ContactFooter.css";
-import SweetXB_InstagramIcon from "../../Assets/contact-icons//icons8-instagram-50-white.png";
+import SweetXB_InstagramIcon from "../../assets/contact-icons//icons8-instagram-50-white.png";
 
 function ContactFooter() {
   return (
