@@ -1,10 +1,10 @@
-import Home from "../Components/Home/home";
-import Quotes from "../Components/Quotes/quotes";
-import PastryShowCase from "../Components/PastryShowCase/pastryShowCase";
-import SweetOffers from "../Components/SweetOffers/SweetOffers";
-import SweetOptions from "../Components/SweetOptions/SweetOptions";
-import Footer from "../Components/Footer/Footer";
-import ContactFooter from "../Components/ContactFooter/ContactFooter"
+import Home from "../Pages/Home/home";
+import Quotes from "../Pages/Quotes/quotes";
+import PastryShowCase from "../Pages/PastryShowCase/pastryShowCase";
+import SweetOffers from "../Pages/SweetOffers/SweetOffers";
+import SweetOptions from "../Pages/SweetOptions/SweetOptions";
+import Footer from "../Pages/Footer/Footer";
+import ContactFooter from "../Pages/ContactFooter/ContactFooter"
 
 function Routes() {
   return (

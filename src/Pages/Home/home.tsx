@@ -1,5 +1,5 @@
-import sweetsLogoTransparent from "../../assets/Sweets_x_B_logo_noBackground.png";
-import breadBackground from "../../assets/bread-1281053_1920.jpg";
+import sweetsLogoTransparent from "../../Assets/Sweets_x_B_logo_noBackground.png";
+import breadBackground from "../../Assets/bread-1281053_1920.jpg";
 import "./home.css";
 
 function Home() {
