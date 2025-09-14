@@ -3,12 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
- --sweetPink: #F8C1BD;
- --whiteSnow: #ffffff;
- --darkBlack: #010101;
- --redLipStick: #96221E;
+  --sweetPink: #f8c1bd;
+  --whiteSnow: #ffffff;
+  --darkBlack: #010101;
+  --redLipStick: #96221e;
 }
 
-.mainContainer{
+.mainContainer {
   display: block;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: env(safe-area-inset);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.mainContainer > * {
+  width: 100%;
+  box-sizing: border-box;
 }
