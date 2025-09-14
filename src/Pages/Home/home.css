@@ -1,3 +1,8 @@
+/*IOS*/
+body {
+  background-color: var(--darkBlack);
+}
+
 /*Base (mobile first)*/
 .homeContainer {
   position: relative;
@@ -7,7 +12,10 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding: 1rem;
+  padding: calc(1rem + env(safe-area-inset-top, 0px))
+    calc(1rem + env(safe-area-inset-right, 0px))
+    calc(1rem + env(safe-area-inset-bottom, 0px))
+    calc(1rem + env(safe-area-inset-left, 0px));
 }
 
 #breadBackground {
@@ -23,7 +31,7 @@
 
 .sweetsLogoContainer {
   position: relative;
-  top: 1rem;
+  top: env(safe-area-inset-top, 1rem);
   z-index: 1;
   text-align: center;
   font-size: 2rem;
