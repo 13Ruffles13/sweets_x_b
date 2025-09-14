@@ -1,7 +1,7 @@
 import "./SweetOptions.css";
-import SweetBeignets from "../../assets/Sweet_Beignets.jpg";
-import SweetBlueBerryMuffins from "../../assets/Sweet_BlueBerryMuffins.jpg";
-import SweetYellowCake from "../../assets/sweetsSugarPowderYellowCake.png";
+import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
+import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
+import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 
 function SweetOptions() {
   return (

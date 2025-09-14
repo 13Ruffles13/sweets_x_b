@@ -1,5 +1,5 @@
 import "./Footer.css";
-import sweetsLogoTransparent from "../../assets/Sweets_x_B_logo.jpg";
+import sweetsLogoTransparent from "../../Visuals/sweet-logos/Sweets_x_B_logo.jpg";
 
 function Footer() {
   return (

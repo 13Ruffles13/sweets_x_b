@@ -1,4 +1,4 @@
-import yellowCake from "../../assets/sweetsSugarPowderYellowCake.png";
+import yellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 import "./pastryShowCase.css";
 
 function PastryShowCase() {
