@@ -8,8 +8,8 @@ function ContactFooter() {
         <div className="footerContent">
           <h2>Find us here</h2>
           <address>
-            <p>SweetsXB@gmail.com</p>
-            <p>(699) 263-1514</p>
+            <p>sweetsxb.2024@gmail.com</p>
+            <p>(669)263-1514</p>
           </address>
         </div>
         <div className="footerContent">
