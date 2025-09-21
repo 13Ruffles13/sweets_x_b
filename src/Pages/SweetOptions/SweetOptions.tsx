@@ -6,26 +6,35 @@ import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYell
 function SweetOptions() {
   return (
     <div className="sweetOptionsMainContainer">
-      <h1>What you'll love</h1>
+      <h1 id="sweetOptionsTitle">What you'll love</h1>
       <div className="sweetOptionsGrid">
         <div className="sweetImageContainer">
           <div className="sweetImageDetails">
             <h2>Beignets</h2>
-            <p>Heavenly pastry creations that will satisfy your cravings</p>
+            <p>
+              Light, pillowy delights dusted with sugar-pure bliss in every
+              bite!
+            </p>
           </div>
           <img src={SweetBeignets} alt="Sweet Beignets" />
         </div>
         <div className="sweetImageContainer">
           <div className="sweetImageDetails">
             <h2>Blueberry Muffins</h2>
-            <p>Deliciously moist muffins that are sure to impress</p>
+            <p>
+              Moist, golden muffins bursting with juicy blueberries-baked to
+              perfection.
+            </p>
           </div>
           <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
         </div>
         <div className="sweetImageContainer">
           <div className="sweetImageDetails">
             <h2>Yellow Cake</h2>
-            <p>Freshly-baked cake sprinkled with powdered sugar</p>
+            <p>
+              Soft, buttery cake topped with a gentle sprinkle of powdered
+              sugar-heavenly and irresistible
+            </p>
           </div>
           <img src={SweetYellowCake} alt="Sweet Yellow Cake" />
         </div>

@@ -1,3 +1,6 @@
+#sweetOffersTitle{
+  color: var(--darkBlack);
+}
 .sweetOffersMainContainer {
   display: grid;
   background: var(--sweetPink);
@@ -53,6 +56,7 @@
 .offersContainerBorder p {
   font-size: 1.15rem;
   line-height: 1.5;
+  color: var(--darkBlack);
 }
 
 /* Responsive Breakpoints */

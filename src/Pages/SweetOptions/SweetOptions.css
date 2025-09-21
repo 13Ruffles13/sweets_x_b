@@ -43,7 +43,7 @@
   object-fit: cover;
   display: block;
   border-radius: 2rem;
-  filter: brightness(82%);
+  filter: brightness(75%);
 }
 
 /* Text overlay */

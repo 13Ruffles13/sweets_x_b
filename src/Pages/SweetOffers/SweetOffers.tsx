@@ -3,7 +3,7 @@ import "./SweetOffers.css";
 function SweetOffers() {
   return (
     <div className="sweetOffersMainContainer">
-      <h1>SWEET OFFERS</h1>
+      <h1 id="sweetOffersTitle">SWEET OFFERS</h1>
       <table className="offersTable">
         <th className="offersTableHeaders">
           <tr>
