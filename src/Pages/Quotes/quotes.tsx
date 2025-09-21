@@ -9,8 +9,7 @@ function Quotes() {
           <>&#129293;</>
         </div>
         <h1 id="whiteSweetQuote">
-          Baked with the finest natural ingredients. Delivered fresh from the
-          oven. Perfection
+          Freshly baked and ready for you-picked up directly from our oven to your hands.
         </h1>
         <div className="whiteSugarHeart">
           {" "}

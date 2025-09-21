@@ -11,16 +11,15 @@ function PastryShowCase() {
           PASTRY <br /> PERFECTION
         </h1>
         <p className="pastryFeedText">
-          Discover deliciousness at Chervet Bakery. Imagine biting into a
-          freshly baked treat that's made with love and handled with care.
+          Experience the magic of freshly baked sweets at SweetsXB. Imagine
+          bitting into a sweet crafted with love and handled with care.
           <br />
           <br />
-          No need to imagine, because our pastries are baked, packed, and
-          delivered on the day they're made, so you're assured of oven-fresh
-          goodness.
+          No need to imagine-our sweets are baked, packed, and delivered the
+          same day, so you can enjoy oven-fresh goodness with every bite.
           <br />
           <br />
-          Now that's perfection.
+          Pure perfection, every time.
         </p>
       </div>
 

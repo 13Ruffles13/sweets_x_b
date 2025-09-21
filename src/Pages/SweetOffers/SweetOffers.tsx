@@ -8,14 +8,18 @@ function SweetOffers() {
         <th className="offersTableHeaders">
           <tr>
             <div className="offersContainerBorder">
-              <h1>Sweevory Magazine</h1>
+              <h1>SweetsXB Instagram</h1>
               <div className="whiteSugarHeart">
                 {" "}
                 <>&#129293;</>
               </div>
               <p>
-                News write-ups offer a great way to let clients know about new
-                products and services, events, awards, and more!
+                Get a daily does of sweetness! Follow us on Instagram to see our
+                freshest hand-crafted sweets, seasonal specials, and
+                behind-the-scenes moments straight from the oven.
+                <br />
+                <br />
+                Tag us in your sweet moments and be featured on our feed!
               </p>
             </div>
           </tr>
@@ -23,14 +27,17 @@ function SweetOffers() {
         <th className="offersTableHeaders">
           <tr>
             <div className="offersContainerBorder">
-              <h1>Sweevory Magazine</h1>
+              <h1>SweetsXB TikTok</h1>
               <div className="whiteSugarHeart">
                 {" "}
                 <>&#129293;</>
               </div>
               <p>
-                News write-ups offer a great way to let clients know about new
-                products and services, events, awards, and more!
+                Watch our sweets come to life! Follow us on Tiktok for fun,
+                bite-sized videos of our hand-crafted sweets, behind-the-scenes
+                baking, and seasonal creations
+                <br /><br />
+                Share your own sweet moments with #SweetsXB for chance to be featured!
               </p>
             </div>
           </tr>
@@ -38,14 +45,15 @@ function SweetOffers() {
         <th className="offersTableHeaders">
           <tr>
             <div className="offersContainerBorder">
-              <h1>Sweevory Magazine</h1>
+              <h1>SweetsXB Newsletter</h1>
               <div className="whiteSugarHeart">
                 {" "}
                 <>&#129293;</>
               </div>
               <p>
-                News write-ups offer a great way to let clients know about new
-                products and services, events, awards, and more!
+                Stay updated with the latest sweets, special offers, and seasonal releases from SweetsXB. Subscribe to our newsletter and never miss a fresh-baked delight! 
+                <br /><br />
+                #SweetsXB.News
               </p>
             </div>
           </tr>

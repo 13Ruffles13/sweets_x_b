@@ -17,8 +17,8 @@ function Home() {
             src={sweetsLogoTransparent}
             alt="Sweets x B Logo"
           />
-          <h2>Sweet Treats made from Scratch</h2>
-          <h5>We got you!</h5>
+          <h2>Sweet Treats Crafted from Scratch</h2>
+          <h5>Taste the difference of fresh, homemade goodness.</h5>
         </div>
       </div>
     </>
