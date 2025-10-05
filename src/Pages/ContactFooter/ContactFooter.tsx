@@ -9,7 +9,7 @@ function ContactFooter() {
           <h2>Find us here</h2>
           <address>
             <p>sweetsxb.2024@gmail.com</p>
-            <p>(669)263-1514</p>
+            <p>(669) 263-1514</p>
           </address>
         </div>
         <div className="footerContent">
