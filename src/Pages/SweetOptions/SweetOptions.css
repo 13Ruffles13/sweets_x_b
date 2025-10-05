@@ -63,8 +63,10 @@
 }
 
 .sweetImageDetails p {
-  font-size: 1rem;
+  font-size: 0.5rem;
   margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
 }
 
 /* -------------------- Responsive Breakpoints -------------------- */
@@ -79,6 +81,11 @@
   .sweetOptionsMainContainer h1 {
     font-size: 3rem;
     margin-bottom: 100px;
+  }
+
+  .sweetImageDetails p {
+    font-size: 0.55rem;
+    font-style: italic;
   }
 }
 
@@ -100,7 +107,8 @@
   }
 
   .sweetImageDetails p {
-    font-size: 1.1rem;
+    font-size: 0.6rem;
+    font-style: italic;
   }
 }
 
@@ -117,6 +125,11 @@
     position: relative;
     top: 5.5rem;
   }
+
+  .sweetImageDetails p {
+    font-size: 0.65rem;
+    font-style: italic;
+  }
 }
 
 /* Extra large devices (≥1200px) */
@@ -130,6 +143,11 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 3rem;
+  }
+
+  .sweetImageDetails p {
+    font-size: 0.7rem;
+    font-style: italic;
   }
 
   .sweetOptionsMainContainer h1 {
