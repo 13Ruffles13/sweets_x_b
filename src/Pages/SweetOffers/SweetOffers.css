@@ -1,4 +1,4 @@
-#sweetOffersTitle{
+#sweetOffersTitle {
   color: var(--darkBlack);
 }
 .sweetOffersMainContainer {
@@ -54,7 +54,9 @@
 }
 
 .offersContainerBorder p {
-  font-size: 1.15rem;
+  font-size: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   line-height: 1.5;
   color: var(--darkBlack);
 }
@@ -72,6 +74,10 @@
     height: 450px;
   }
 
+  .offersContainerBorder p {
+    font-size: 0.6rem;
+  }
+
   .sweetOffersMainContainer h1 {
     font-size: 2.2rem;
   }
@@ -84,6 +90,10 @@
 
   .offersTable {
     gap: 3rem;
+  }
+
+  .offersContainerBorder p {
+    font-size: 0.7rem;
   }
 
   .offersContainerBorder {
@@ -105,9 +115,11 @@
     max-width: 800px;
     height: 600px;
   }
-
+  .offersContainerBorder p {
+    font-size: 0.8rem;
+  }
   .sweetOffersMainContainer h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -117,9 +129,12 @@
   }
 
   .offersTable {
-    max-width: 1500px;
     margin: 0 auto;
     gap: 3rem;
+  }
+
+  .offersContainerBorder p {
+    font-size: 1rem;
   }
 
   .offersContainerBorder {
@@ -128,7 +143,7 @@
   }
 
   .sweetOffersMainContainer h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     letter-spacing: 5px;
     word-spacing: 20px;
   }
