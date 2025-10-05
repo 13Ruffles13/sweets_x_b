@@ -3,12 +3,12 @@ import SweetData from "../SweetData/SweetData";
 
 console.log(SweetData);
 
-interface SweetProduct {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-}
+// interface SweetProduct {
+//   id: number;
+//   title: string;
+//   description: string;
+//   price: number;
+// }
 
 // async function getPrices(): Promise<SweetProduct> {}
 
