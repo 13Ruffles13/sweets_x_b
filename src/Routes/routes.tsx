@@ -1,23 +1,14 @@
-import Home from "../Pages/Home/home";
-import Quotes from "../Pages/Quotes/quotes";
-import PastryShowCase from "../Pages/PastryShowCase/pastryShowCase";
-import SweetOffers from "../Pages/SweetOffers/SweetOffers";
-import SweetOptions from "../Pages/SweetOptions/SweetOptions";
-import Footer from "../Pages/Footer/Footer";
-import ContactFooter from "../Pages/ContactFooter/ContactFooter";
+import MainHomeRoute from "./Home/MainHomeRoute";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function Routes() {
+function RoutePaths() {
   return (
-    <>
-      <Home />
-      <Quotes />
-      <PastryShowCase />
-      <SweetOffers />
-      <SweetOptions />
-      <Footer />
-      <ContactFooter />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/sweets_x_b" element={<MainHomeRoute />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default Routes;
+export default RoutePaths;

@@ -1,11 +1,11 @@
-import Routes from "./Routes/routes";
+import RoutePaths from "./Routes/routes";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="mainContainer">
-        <Routes />
+        <RoutePaths/>
       </div>
     </>
   );
