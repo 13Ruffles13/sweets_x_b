@@ -36,8 +36,10 @@ function SweetOffers() {
                 Watch our sweets come to life! Follow us on Tiktok for fun,
                 bite-sized videos of our hand-crafted sweets, behind-the-scenes
                 baking, and seasonal creations
-                <br /><br />
-                Share your own sweet moments with #SweetsXB for chance to be featured!
+                <br />
+                <br />
+                Share your own sweet moments with #SweetsXB for chance to be
+                featured!
               </p>
             </div>
           </tr>
@@ -51,8 +53,11 @@ function SweetOffers() {
                 <>&#129293;</>
               </div>
               <p>
-                Stay updated with the latest sweets, special offers, and seasonal releases from SweetsXB. Subscribe to our newsletter and never miss a fresh-baked delight! 
-                <br /><br />
+                Stay updated with the latest sweets, special offers, and
+                seasonal releases from SweetsXB. Subscribe to our newsletter and
+                never miss a fresh-baked delight!
+                <br />
+                <br />
                 #SweetsXB.News
               </p>
             </div>
