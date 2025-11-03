@@ -28,11 +28,8 @@ jobs:
           node-version: lts/*
           cache: "npm"
           
-      - name: Clean npm cache
-        run: npm cache clean --force
-
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Vite app
         run: npm run build
