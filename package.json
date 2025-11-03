@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest --watch",
     "check": "npm run lint && npm run test",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
+    "clean-install": "rmdir /s /q node_modules && del /f package-lock.json && npm install"
   },
   "dependencies": {
     "react": "^19.1.0",
