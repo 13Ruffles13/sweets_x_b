@@ -3,6 +3,11 @@ import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 
+function loadCustomersOrderPage(): void {
+  const url = window.location.href;
+  window.location.href = url + "orders";
+}
+
 function SweetOptions() {
   return (
     <div className="sweetOptionsMainContainer">
@@ -36,7 +41,11 @@ function SweetOptions() {
               sugar-heavenly and irresistible
             </p>
           </div>
-          <img src={SweetYellowCake} alt="Sweet Yellow Cake" />
+          <img
+            src={SweetYellowCake}
+            alt="Sweet Yellow Cake"
+            onClick={loadCustomersOrderPage}
+          />
         </div>
       </div>
     </div>
