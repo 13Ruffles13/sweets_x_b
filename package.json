@@ -12,7 +12,7 @@
     "test:watch": "vitest --watch",
     "check": "npm run lint && npm run test",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
-    "fresh-install": "powershell -Command \"Remove-Item -Recurse -Force node_modules; Remove-Item -Force package-lock.json; npm cache clean --force; npx npm-check-updates -u; npm install\"",
+    "fresh-install": "powershell -Command \"Remove-Item -Recurse -Force node_modules; Remove-Item -Force package-lock.json; npm cache clean --force; npx npm-check-updates -u; npm install; npm audit\"",
     "prepush": "npm run fresh-install && npm run build"
   },
   "dependencies": {
