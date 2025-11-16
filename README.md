@@ -19,7 +19,7 @@ Use the scripts below to manage local development, run tests, or build the proje
   - [Testing](#testing)
   - [Formatting](#formatting)
   - [Dependency Management](#dependency-management)
-- [Requirements](#requirements)
+- [Software Requirements](#software-requirements)
 ---
 
 # Scripts
@@ -81,7 +81,9 @@ Ensures the project is clean, dependencies are up-to-date, and the build passes 
 
 ---
 
-# Requirements
+# Software Requirements
+
+To run and develop this project locally, the following software is required:
 
 - Node.js >= 18
 - npm >= 9
