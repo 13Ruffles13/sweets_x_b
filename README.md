@@ -2,11 +2,17 @@
 
 🍰 Sweet treats made from scratch. This app showcases a small, home-based bakery, delivering happiness one dessert at a time.
 
-Use the scripts below to start development, run tests, or build the project.
+---
+This repository is public to host the web application, but all development, testing, and building is done by me.
+
+> **Security Note:** Do **not** commit API keys, passwords, or other sensitive data. Use a `.env` file and add it to `.gitignore`.
+
+Use the scripts below to manage local development, run tests, or build the project.
 
 ---
 
 ## Table of Contents
+
 - [Scripts](#scripts)
   - [Development](#development)
   - [Code Quality & Build](#code-quality--build)
@@ -25,10 +31,12 @@ Below is a detailed explanation of what each script does.
 ---
 
 ## Development
+
 - **`dev`** – Starts the development server for local development.  
 - **`preview`** – Shows a preview of the production build.
 
 ## Code Quality & Build
+
 - **`build`** – Performs the following steps in order:  
   1. Formats the code using Prettier.  
   2. Checks the code for errors and style issues using ESLint.  
@@ -40,6 +48,7 @@ Below is a detailed explanation of what each script does.
 - **`check`** – Runs both linting and tests together.
 
 ## Testing
+
 - **`test`** – Runs all tests using **Vitest**.  
 - **`test:watch`** – Watches files and re-runs tests whenever they change.
 
@@ -47,16 +56,19 @@ Below is a detailed explanation of what each script does.
 > See [Vite + Jest docs](https://jestjs.io/docs/getting-started#using-vite).
 
 ## Formatting
+
 - **`format`** – Automatically formats all source files using Prettier.  
   Supported file types: TypeScript, JavaScript, JSON, CSS, SCSS, Markdown, etc.
 
 ## Dependency Management
+
 - **`fresh-install`** – Completely resets the project:  
   1. Deletes `node_modules`  
   2. Deletes `package-lock.json`  
   3. Clears npm cache  
   4. Updates all dependencies  
-  5. Reinstalls everything  
+  5. Reinstalls everything
+  6. Reports vulnerabilities using `npm audit`
   *(Windows PowerShell only)*
 
 - **`prepush`** – Runs `fresh-install` and then `build` before pushing code.
