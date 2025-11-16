@@ -1,32 +1,82 @@
-# Sweets X B
+# 🍰 Sweets X B
+
+Sweet treats made from scratch. This app showcases a small, home-based bakery, delivering happiness one dessert at a time.
 
 ---
 
-## Scripts
+## Table of Contents
+- [Scripts](#scripts)
+  - [Development](#development)
+  - [Code Quality & Build](#code-quality--build)
+  - [Testing](#testing)
+  - [Formatting](#formatting)
+  - [Dependency Management](#dependency-management)
 
-### Use of These Scripts
+---
 
-This project comes with a set of npm scripts to simplify development, testing, and production builds. Below is a quick overview of their purpose:
+# Scripts
 
-- **Development:** `dev`, `preview`  
-  Start the development server or preview the production build.
+This project includes several npm scripts to help with development, testing, formatting, and building the app.
 
-- **Build & Quality Checks:** `build`, `lint`, `check`  
-  Format code, lint for issues, run tests, compile TypeScript, and create a production build.
+Below is a detailed explanation of what each script does.  
 
-- **Testing:** `test`, `test:watch`  
-  Run tests using Vitest. Note that Jest is not supported due to Vite plugin incompatibilities.
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
 
-- **Code Formatting:** `format`  
-  Format all source files using Prettier.
+---
 
-- **Fresh Install & Dependency Management:** `fresh-install`, `prepush`  
-  Reset and update dependencies, then run a full build to ensure everything is in a good state before pushing changes.
+## Development
+- **`dev`** – Starts the development server for local development.  
+- **`preview`** – Shows a preview of the production build.  
+
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+
+---
+
+## Code Quality & Build
+- **`build`** – Performs the following steps in order:  
+  1. Formats the code using Prettier.  
+  2. Checks the code for errors and style issues using ESLint.  
+  3. Runs all tests with Vitest.  
+  4. Compiles TypeScript.  
+  5. Creates a production build.
+
+- **`lint`** – Checks code for errors or style issues.  
+- **`check`** – Runs both linting and tests together to quickly verify code quality.  
+
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+
+---
 
 ## Testing
+- **`test`** – Runs all tests using **Vitest**.  
+- **`test:watch`** – Watches files and re-runs tests whenever they change.
 
-**Framework:** Vitest  
-*Used for testing the Vite application.*
+> ⚠ **Note:** Jest is not supported due to incompatibilities with Vite.  
+> See [Vite + Jest docs](https://jestjs.io/docs/getting-started#using-vite).
 
-> ⚠ Note: Jest is not supported by Vite due to incompatibilities with the Vite plugin system.  
-> See [Vite + Jest docs](https://jestjs.io/docs/getting-started#using-vite) for more details.
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+
+---
+
+## Formatting
+- **`format`** – Automatically formats all source files using Prettier.  
+  Supported file types: TypeScript, JavaScript, JSON, CSS, SCSS, Markdown, etc.  
+
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+
+---
+
+## Dependency Management
+- **`fresh-install`** – Completely resets the project:  
+  1. Deletes `node_modules`  
+  2. Deletes `package-lock.json`  
+  3. Clears npm cache  
+  4. Updates all dependencies  
+  5. Reinstalls everything  
+  *(Windows PowerShell only)*
+
+- **`prepush`** – Runs `fresh-install` and then `build` before pushing code. 
+
+Ensures the project is clean, dependencies are up-to-date, and the build passes successfully.  
+
+[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
