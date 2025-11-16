@@ -2,13 +2,11 @@ import "./SweetOptions.css";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
-
-function loadCustomersOrderPage(): void {
-  const url = window.location.href;
-  window.location.href = url + "orders";
-}
+import { useNavigate } from "react-router";
 
 function SweetOptions() {
+  const navigate = useNavigate();
+
   return (
     <div className="sweetOptionsMainContainer">
       <h1 id="sweetOptionsTitle">What you'll love</h1>
@@ -44,7 +42,7 @@ function SweetOptions() {
           <img
             src={SweetYellowCake}
             alt="Sweet Yellow Cake"
-            onClick={loadCustomersOrderPage}
+            onClick={() => void navigate("/orders")}
           />
         </div>
       </div>
