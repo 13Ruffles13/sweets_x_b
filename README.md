@@ -1,6 +1,8 @@
-# 🍰 Sweets X B
+# Sweets X B
 
-Sweet treats made from scratch. This app showcases a small, home-based bakery, delivering happiness one dessert at a time.
+🍰 Sweet treats made from scratch. This app showcases a small, home-based bakery, delivering happiness one dessert at a time.
+
+Use the scripts below to start development, run tests, or build the project.
 
 ---
 
@@ -18,19 +20,13 @@ Sweet treats made from scratch. This app showcases a small, home-based bakery, d
 
 This project includes several npm scripts to help with development, testing, formatting, and building the app.
 
-Below is a detailed explanation of what each script does.  
-
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+Below is a detailed explanation of what each script does.
 
 ---
 
 ## Development
 - **`dev`** – Starts the development server for local development.  
-- **`preview`** – Shows a preview of the production build.  
-
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
-
----
+- **`preview`** – Shows a preview of the production build.
 
 ## Code Quality & Build
 - **`build`** – Performs the following steps in order:  
@@ -41,11 +37,7 @@ Below is a detailed explanation of what each script does.
   5. Creates a production build.
 
 - **`lint`** – Checks code for errors or style issues.  
-- **`check`** – Runs both linting and tests together to quickly verify code quality.  
-
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
-
----
+- **`check`** – Runs both linting and tests together.
 
 ## Testing
 - **`test`** – Runs all tests using **Vitest**.  
@@ -54,17 +46,9 @@ Below is a detailed explanation of what each script does.
 > ⚠ **Note:** Jest is not supported due to incompatibilities with Vite.  
 > See [Vite + Jest docs](https://jestjs.io/docs/getting-started#using-vite).
 
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
-
----
-
 ## Formatting
 - **`format`** – Automatically formats all source files using Prettier.  
-  Supported file types: TypeScript, JavaScript, JSON, CSS, SCSS, Markdown, etc.  
-
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
-
----
+  Supported file types: TypeScript, JavaScript, JSON, CSS, SCSS, Markdown, etc.
 
 ## Dependency Management
 - **`fresh-install`** – Completely resets the project:  
@@ -75,8 +59,11 @@ Below is a detailed explanation of what each script does.
   5. Reinstalls everything  
   *(Windows PowerShell only)*
 
-- **`prepush`** – Runs `fresh-install` and then `build` before pushing code. 
+- **`prepush`** – Runs `fresh-install` and then `build` before pushing code.
 
-Ensures the project is clean, dependencies are up-to-date, and the build passes successfully.  
+Ensures the project is clean, dependencies are up-to-date, and the build passes successfully.
 
-[Back to Top](#%F0%9F%8D%B0-sweets-x-b)
+
+[Back to Top](#sweets-x-b)
+
+---
