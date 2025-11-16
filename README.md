@@ -19,7 +19,7 @@ Use the scripts below to manage local development, run tests, or build the proje
   - [Testing](#testing)
   - [Formatting](#formatting)
   - [Dependency Management](#dependency-management)
-
+- [Requirements](#requirements)
 ---
 
 # Scripts
@@ -71,10 +71,22 @@ Below is a detailed explanation of what each script does.
   6. Reports vulnerabilities using `npm audit`
   *(Windows PowerShell only)*
 
-- **`prepush`** – Runs `fresh-install` and then `build` before pushing code.
+- **`prepush`** – Runs `fresh-install` and then `build` before pushing code to ensure everything is working and dependencies are up-to-date.
+
 
 Ensures the project is clean, dependencies are up-to-date, and the build passes successfully.
 
+
+[Back to Top](#sweets-x-b)
+
+---
+
+# Requirements
+
+- Node.js >= 18
+- npm >= 9
+- Windows PowerShell (for `fresh-install` script)
+- Git (for version control)
 
 [Back to Top](#sweets-x-b)
 
