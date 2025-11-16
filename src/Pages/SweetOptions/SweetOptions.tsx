@@ -3,6 +3,7 @@ import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 import { useNavigate } from "react-router";
+import { isFeatureEnabled } from "../../Config/featureFlags";
 
 function SweetOptions() {
   const navigate = useNavigate();
@@ -42,7 +43,11 @@ function SweetOptions() {
           <img
             src={SweetYellowCake}
             alt="Sweet Yellow Cake"
-            onClick={() => void navigate("/orders")}
+            onClick={
+              isFeatureEnabled("enableOrdersPage")
+                ? () => void navigate("/orders")
+                : undefined
+            }
           />
         </div>
       </div>
