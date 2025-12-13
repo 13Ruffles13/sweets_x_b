@@ -15,7 +15,7 @@ describe("App Component", () => {
     );
 
     // Assert
-    const mainContainer = document.querySelector(".mainContainer");
+    const mainContainer = document.querySelector(".min-h-screen");
     expect(mainContainer).not.toBeNull();
   });
 
