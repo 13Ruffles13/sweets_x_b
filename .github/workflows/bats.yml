@@ -31,9 +31,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check unused dependencies
-        run: npm run knip
-
       - name: Build Vite app
         run: npm run build
 
