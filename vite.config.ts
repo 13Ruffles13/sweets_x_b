@@ -9,5 +9,10 @@ export default defineConfig({
   test: { environment: 'jsdom',
     setupFiles: './src/Test/setupTests.ts',
     globals: true,
+    coverage: {
+      provider: 'v8',
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**', 'src/main.tsx', 'src/vite-env.d.ts'],
+    }
   },
 })
