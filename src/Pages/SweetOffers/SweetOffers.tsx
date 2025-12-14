@@ -9,19 +9,19 @@ function SweetOffers() {
           <tr>
             <div className="offersContainerBorder">
               <a href="https://www.instagram.com/sweetsssxb/">
-              <h1>SweetsXB Instagram</h1>
-              <div className="whiteSugarHeart">
-                {" "}
-                <>&#129293;</>
-              </div>
-              <p>
-                Get a daily does of sweetness! Follow us on Instagram to see our
-                freshest hand-crafted sweets, seasonal specials, and
-                behind-the-scenes moments straight from the oven.
-                <br />
-                <br />
-                Tag us in your sweet moments and be featured on our feed!
-              </p>
+                <h1>SweetsXB Instagram</h1>
+                <div className="whiteSugarHeart">
+                  {" "}
+                  <>&#129293;</>
+                </div>
+                <p>
+                  Get a daily does of sweetness! Follow us on Instagram to see
+                  our freshest hand-crafted sweets, seasonal specials, and
+                  behind-the-scenes moments straight from the oven.
+                  <br />
+                  <br />
+                  Tag us in your sweet moments and be featured on our feed!
+                </p>
               </a>
             </div>
           </tr>
