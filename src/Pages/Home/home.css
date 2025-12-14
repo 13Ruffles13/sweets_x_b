@@ -1,4 +1,9 @@
 /*Base (mobile first)*/
+
+h2,
+h5 {
+  color: var(--darkBlack);
+}
 .homeContainer {
   position: relative;
   display: flex;
