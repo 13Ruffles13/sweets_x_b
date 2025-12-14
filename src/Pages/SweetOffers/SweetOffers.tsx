@@ -8,6 +8,7 @@ function SweetOffers() {
         <th className="offersTableHeaders">
           <tr>
             <div className="offersContainerBorder">
+              <a href="https://www.instagram.com/sweetsssxb/">
               <h1>SweetsXB Instagram</h1>
               <div className="whiteSugarHeart">
                 {" "}
@@ -21,10 +22,11 @@ function SweetOffers() {
                 <br />
                 Tag us in your sweet moments and be featured on our feed!
               </p>
+              </a>
             </div>
           </tr>
         </th>
-        <th className="offersTableHeaders">
+        <th className="offersTableHeaders" id="tiktok">
           <tr>
             <div className="offersContainerBorder">
               <h1>SweetsXB TikTok</h1>
@@ -44,7 +46,7 @@ function SweetOffers() {
             </div>
           </tr>
         </th>
-        <th className="offersTableHeaders">
+        <th className="offersTableHeaders" id="newsletter">
           <tr>
             <div className="offersContainerBorder">
               <h1>SweetsXB Newsletter</h1>

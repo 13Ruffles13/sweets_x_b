@@ -1,3 +1,12 @@
+
+#tiktok {
+  display: none;
+}
+
+#newsletter {
+  display: none;
+}
+
 #sweetOffersTitle {
   color: var(--darkBlack);
 }
@@ -108,11 +117,11 @@
 
 @media (min-width: 992px) {
   .offersTable {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
   .offersContainerBorder {
-    max-width: 800px;
+    max-width: 600px;
     height: 600px;
   }
   .offersContainerBorder p {
