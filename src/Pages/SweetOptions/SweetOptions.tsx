@@ -12,7 +12,7 @@ function SweetOptions() {
     <div className="sweetOptionsMainContainer">
       <h1 id="sweetOptionsTitle">What you'll love</h1>
       <div className="sweetOptionsGrid">
-        <div className="sweetImageContainer">
+        <div className="sweetImageContainer" id="beignets">
           <div className="sweetImageDetails">
             <h2>Beignets</h2>
             <p>
@@ -22,7 +22,7 @@ function SweetOptions() {
           </div>
           <img src={SweetBeignets} alt="Sweet Beignets" />
         </div>
-        <div className="sweetImageContainer">
+        <div className="sweetImageContainer" id="blueberryMuffins">
           <div className="sweetImageDetails">
             <h2>Blueberry Muffins</h2>
             <p>
@@ -33,8 +33,8 @@ function SweetOptions() {
           <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
         </div>
         <div className="sweetImageContainer">
-          <div className="sweetImageDetails">
-            <h2>Yellow Cake</h2>
+          <div className="sweetImageDetails" id="sweetYellowCake">
+            <h2><a href="https://forms.gle/H6PMGL8RNCrVG9y79">Yellow Cake</a></h2>
             <p>
               Soft, buttery cake topped with a gentle sprinkle of powdered
               sugar-heavenly and irresistible
