@@ -33,22 +33,24 @@ function SweetOptions() {
           <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
         </div>
         <div className="sweetImageContainer">
-          <div className="sweetImageDetails" id="sweetYellowCake">
-            <h2><a href="https://forms.gle/H6PMGL8RNCrVG9y79">Yellow Cake</a></h2>
-            <p>
-              Soft, buttery cake topped with a gentle sprinkle of powdered
-              sugar-heavenly and irresistible
-            </p>
-          </div>
-          <img
-            src={SweetYellowCake}
-            alt="Sweet Yellow Cake"
-            onClick={
-              isFeatureEnabled("enableOrdersPage")
-                ? () => void navigate("/orders")
-                : undefined
-            }
-          />
+          <a href="https://forms.gle/H6PMGL8RNCrVG9y79">
+            <div className="sweetImageDetails" id="sweetYellowCake">
+              <h2>Yellow Cake</h2>
+              <p>
+                Soft, buttery cake topped with a gentle sprinkle of powdered
+                sugar-heavenly and irresistible
+              </p>
+            </div>
+            <img
+              src={SweetYellowCake}
+              alt="Sweet Yellow Cake"
+              onClick={
+                isFeatureEnabled("enableOrdersPage")
+                  ? () => void navigate("/orders")
+                  : undefined
+              }
+            />
+          </a>
         </div>
       </div>
     </div>
