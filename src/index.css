@@ -11,11 +11,17 @@
   --redLipStick: #96221e;
 }
 
-/* Tail wind explanations
-| Tailwind Class              | Effect                                  |
-| --------------------------- | --------------------------------------- |
-| `min-h-screen`              | Ensures container fills viewport height |
-| `w-full max-w-full`         | Full width, no horizontal scroll        |
-| `overflow-x-hidden`         | Prevents horizontal overflow            |
-| `px-[env(safe-area-inset)]` | iOS notch / safe-area padding           |
-*/
+.mainContainer {
+  display: block;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: env(safe-area-inset);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.mainContainer > * {
+  width: 100%;
+  box-sizing: border-box;
+}
