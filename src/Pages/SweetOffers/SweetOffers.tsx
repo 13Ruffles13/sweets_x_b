@@ -8,7 +8,10 @@ function SweetOffers() {
         <th className="offersTableHeaders">
           <tr>
             <div className="offersContainerBorder">
-              <a href="https://www.instagram.com/sweetsssxb/">
+              <a
+                href="https://www.instagram.com/sweetsssxb/"
+                id="instagramLink"
+              >
                 <h1>SweetsXB Instagram</h1>
                 <div className="whiteSugarHeart">
                   {" "}

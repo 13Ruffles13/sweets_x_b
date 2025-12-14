@@ -1,7 +1,6 @@
 /*Base (mobile first)*/
 
-h2,
-h5 {
+.homeTextContainer {
   color: var(--darkBlack);
 }
 .homeContainer {

@@ -1,7 +1,7 @@
 import "./SweetOptions.css";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
-import SweetYellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
+import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 import { useNavigate } from "react-router";
 import { isFeatureEnabled } from "../../Config/featureFlags";
 
@@ -33,17 +33,22 @@ function SweetOptions() {
           <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
         </div>
         <div className="sweetImageContainer">
-          <a href="https://forms.gle/H6PMGL8RNCrVG9y79">
-            <div className="sweetImageDetails" id="sweetYellowCake">
-              <h2>Yellow Cake</h2>
+          <a
+            href="https://forms.gle/H6PMGL8RNCrVG9y79"
+            id="AlmondCreamCheesePoundCakeLink"
+          >
+            <div className="sweetImageDetails" id="AlmondCreamCheesePoundCake">
+              <h2 id="AlmondCreamCheesePoundCakeTitle">
+                Almond Cream Cheese Pound Cake
+              </h2>
               <p>
                 Soft, buttery cake topped with a gentle sprinkle of powdered
                 sugar-heavenly and irresistible
               </p>
             </div>
             <img
-              src={SweetYellowCake}
-              alt="Sweet Yellow Cake"
+              src={AlmondCreamCheesePoundCake}
+              alt="Almond Cream Cheese Pound Cake"
               onClick={
                 isFeatureEnabled("enableOrdersPage")
                   ? () => void navigate("/orders")

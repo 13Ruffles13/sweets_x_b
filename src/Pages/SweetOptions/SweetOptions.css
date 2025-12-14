@@ -1,6 +1,11 @@
 /* TODO: Removed two store options that are not on menu #beignets and #blueberryMuffins */
 
-a {
+#AlmondCreamCheesePoundCakeTitle {
+  font-size: 1.45rem;
+}
+
+#AlmondCreamCheesePoundCakeLink {
+  color: var(--whiteSnow);
   text-decoration: none;
 }
 
