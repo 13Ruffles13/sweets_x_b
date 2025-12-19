@@ -14,6 +14,7 @@
 #sweetOffersTitle {
   color: var(--darkBlack);
 }
+
 .sweetOffersMainContainer {
   display: grid;
   background: var(--sweetPink);

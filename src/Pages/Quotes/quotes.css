@@ -1,13 +1,28 @@
 /* Base (mobile first) */
 
 .quotesMainContainer {
+  position: relative;
   background: var(--sweetPink);
   display: grid;
-  place-items: center; /* Centers content both ways */
-  height: auto; /* Let content define height on small screens */
+  place-items: center;
+  height: auto;
   min-height: 100vh;
   padding: 2rem;
   text-align: center;
+  overflow: hidden;
+}
+
+.quotesMainContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.quotesMainContainer > * {
+  position: relative;
+  z-index: 2;
 }
 
 .whiteSugarHeart {
@@ -15,7 +30,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  font-size: 2.5rem; /* Smaller for mobile */
+  font-size: 2.5rem;
 }
 
 #whiteSweetQuote {

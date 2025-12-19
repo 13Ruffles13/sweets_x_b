@@ -31,6 +31,7 @@
   margin: 0 0 6.25rem;
   position: relative;
   top: 5.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Grid container */
@@ -62,7 +63,15 @@
   object-fit: cover;
   display: block;
   border-radius: 2rem;
-  filter: brightness(75%);
+  filter: brightness(85%);
+}
+
+.sweetImageContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 0;
 }
 
 /* Text overlay */
@@ -82,7 +91,8 @@
 }
 
 .sweetImageDetails p {
-  font-size: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
@@ -103,7 +113,7 @@
   }
 
   .sweetImageDetails p {
-    font-size: 0.55rem;
+    font-size: 0.88rem;
     font-style: italic;
   }
 }
@@ -126,7 +136,7 @@
   }
 
   .sweetImageDetails p {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-style: italic;
   }
 }
@@ -146,7 +156,7 @@
   }
 
   .sweetImageDetails p {
-    font-size: 0.65rem;
+    font-size: 0.91rem;
     font-style: italic;
   }
 }
@@ -166,7 +176,7 @@
   }
 
   .sweetImageDetails p {
-    font-size: 0.7rem;
+    font-size: 0.92rem;
     font-style: italic;
   }
 
