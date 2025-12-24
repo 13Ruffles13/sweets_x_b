@@ -1,7 +1,7 @@
 /* TODO: Removed two store options that are not on menu #beignets and #blueberryMuffins */
 
 #AlmondCreamCheesePoundCakeTitle {
-  font-size: 1.45rem;
+  font-size: 24px
 }
 
 #AlmondCreamCheesePoundCakeLink {
@@ -27,7 +27,7 @@
 
 .sweetOptionsMainContainer h1 {
   color: var(--sweetPink);
-  font-size: 2.5rem;
+  font-size: 70px;
   margin: 0 0 6.25rem;
   position: relative;
   top: 5.5rem;
@@ -91,7 +91,7 @@
 }
 
 .sweetImageDetails p {
-  font-size: 0.85rem;
+  font-size: 12px;
   line-height: 1.5;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
