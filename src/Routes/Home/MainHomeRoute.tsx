@@ -11,9 +11,9 @@ export default function MainHomeRoute() {
     <>
       <Home />
       <Quotes />
-      <PastryShowCase />
-      <SweetOffers />
       <SweetOptions />
+      <SweetOffers />
+      <PastryShowCase />
       <Footer />
       <ContactFooter />
     </>
