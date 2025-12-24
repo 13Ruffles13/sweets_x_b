@@ -5,6 +5,8 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import reactX from "eslint-plugin-react-x";
 import reactDom from "eslint-plugin-react-dom";
+import htmlEslint from "@html-eslint/eslint-plugin";
+import htmlParser from "@html-eslint/parser";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -33,5 +35,19 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
-  }
+  },
+  {
+    files: ["**/*.html"],
+    languageOptions: {
+      parser: htmlParser,
+    },
+    plugins: {
+      "@html-eslint": htmlEslint,
+    },
+    rules: {
+      "@html-eslint/require-meta-description": "error",
+      "@html-eslint/require-lang": "error",
+      "@html-eslint/no-duplicate-attrs": "error",
+    },
+  },
 );
