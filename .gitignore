@@ -30,6 +30,7 @@ private
 cypress/videos/
 cypress/screenshots/
 cypress/results/
+cypress/downloads/
 cypress/support/*.js
 cypress.config.js
 *.cy.js
