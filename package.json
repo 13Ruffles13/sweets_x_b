@@ -16,7 +16,9 @@
     "fresh-install": "powershell -Command \"Remove-Item -Recurse -Force node_modules; Remove-Item -Force package-lock.json; npm cache clean --force; npx npm-check-updates -u; npm install; npm audit\"",
     "prepush": "npm run fresh-install && npm run build",
     "knip": "knip",
-    "knip:fix": "knip --fix"
+    "knip:fix": "knip --fix",
+    "cypress": "cypress open",
+    "cypress:cli": "cypress run"
   },
   "dependencies": {
     "@types/node": "^25.0.3",
@@ -32,10 +34,13 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "@vitest/coverage-v8": "^4.0.16",
+    "cypress": "^15.8.1",
+    "cypress-axe": "^1.7.0",
     "eslint": "^9.39.2",
     "eslint-plugin-react-dom": "^2.4.0",
     "eslint-plugin-react-hooks": "^7.0.1",

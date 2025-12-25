@@ -25,3 +25,15 @@ coverage
 *.sw?
 private
 .vscode
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/results/
+cypress/support/*.js
+cypress.config.js
+*.cy.js
+*.tsbuildinfo
+
+# Vitest / Test artifacts
+*.test-results.json

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "strict": true,
+    "types": ["cypress", "node"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["cypress/**/*.ts", "cypress.config.ts"]
+}
