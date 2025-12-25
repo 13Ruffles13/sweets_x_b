@@ -17,8 +17,8 @@
     "prepush": "npm run fresh-install && npm run build",
     "knip": "knip",
     "knip:fix": "knip --fix",
-    "cypress": "cypress open",
-    "cypress:cli": "cypress run"
+    "cypress": "cypress open --config-file cypress.config.ts",
+    "cypress:cli": "cypress run --config-file cypress.config.ts"
   },
   "dependencies": {
     "@types/node": "^25.0.3",
