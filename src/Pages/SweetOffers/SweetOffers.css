@@ -20,7 +20,7 @@
   display: grid;
   background: var(--sweetPink);
   padding: 3rem 1rem;
-  color: var(--whiteSnow);
+  color: var(--darkBlack);
   min-height: 100vh;
 }
 
