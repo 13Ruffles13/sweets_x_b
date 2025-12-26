@@ -2,6 +2,7 @@
 
 .homeTextContainer {
   color: var(--darkBlack);
+  text-align: center;
 }
 
 .homeContainer {
@@ -9,10 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
   width: 100%;
   overflow: hidden;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #breadBackground {
@@ -28,12 +30,13 @@
 
 .sweetsLogoContainer {
   position: relative;
-  top: 1rem;
   z-index: 1;
   text-align: center;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   color: var(--whiteSnow);
+  width: 100%;
+  max-width: 90vw;
 }
 
 #sweetsxb_logo {
