@@ -7,6 +7,7 @@ import reactX from "eslint-plugin-react-x";
 import reactDom from "eslint-plugin-react-dom";
 import htmlEslint from "@html-eslint/eslint-plugin";
 import htmlParser from "@html-eslint/parser";
+import unusedImports from "eslint-plugin-unused-imports";
 
 export default tseslint.config(
   { ignores: ["dist", "coverage", "cypress"] },
@@ -25,6 +26,7 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
       "react-x": reactX,
       "react-dom": reactDom,
+      "unused-imports": unusedImports,
     },
     rules: {
       ...reactX.configs["recommended-typescript"].rules,
@@ -33,6 +35,16 @@ export default tseslint.config(
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
+      ],
+      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-vars": [
+        "error",
+        {
+          vars: "all",
+          varsIgnorePattern: "^_",
+          args: "after-used",
+          argsIgnorePattern: "^_",
+        },
       ],
     },
   },
