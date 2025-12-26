@@ -1,7 +1,7 @@
 import { MemoryRouter } from "react-router";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import RoutePaths from "./routes";
+import { RoutePaths } from "./routes";
 
 describe("RoutePaths component", () => {
   test("renders homepage route", () => {

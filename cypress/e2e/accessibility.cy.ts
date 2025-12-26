@@ -1,6 +1,6 @@
 import "cypress-axe";
 
-const websiteBaseUrl = 'https://sweetsxb.netlify.app/';
+const websiteBaseUrl = "https://sweetsxb.netlify.app/";
 
 describe("Comprehensive Accessibility Tests", () => {
   beforeEach(() => {
@@ -12,8 +12,8 @@ describe("Comprehensive Accessibility Tests", () => {
     // Run comprehensive accessibility check
     cy.checkA11y(undefined, undefined, (violations) => {
       if (violations.length) {
-        cy.log('Accessibility violations found:');
-        violations.forEach(violation => {
+        cy.log("Accessibility violations found:");
+        violations.forEach((violation) => {
           cy.log(`${violation.id}: ${violation.description}`);
           cy.log(`Impact: ${violation.impact}`);
           cy.log(`Help: ${violation.helpUrl}`);
@@ -45,7 +45,7 @@ describe("Comprehensive Accessibility Tests", () => {
         "heading-order": { enabled: true },
         "landmark-one-main": { enabled: true },
         "page-has-heading-one": { enabled: true },
-        "region": { enabled: true },
+        region: { enabled: true },
       },
     });
   });
@@ -70,10 +70,10 @@ describe("Comprehensive Accessibility Tests", () => {
   });
 
   it("should allow user scaling in viewport", () => {
-    cy.get('meta[name="viewport"]').should('exist');
+    cy.get('meta[name="viewport"]').should("exist");
     cy.get('meta[name="viewport"]')
-      .should('have.attr', 'content')
-      .and('not.contain', 'user-scalable=no')
-      .and('not.contain', 'maximum-scale=1.0');
+      .should("have.attr", "content")
+      .and("not.contain", "user-scalable=no")
+      .and("not.contain", "maximum-scale=1.0");
   });
 });

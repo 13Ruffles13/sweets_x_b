@@ -1,5 +1,5 @@
 import { MainHomeRoute } from "./Home/MainHomeRoute";
-import CustomerOrders from "./CustomerOrders/CustomerOrdersRoute";
+import { CustomerOrders } from "./CustomerOrders/CustomerOrdersRoute";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 export function RoutePaths() {

@@ -1,7 +1,7 @@
 import { RoutePaths } from "./Routes/routes";
 import "./App.css";
 
-function App() {
+export function App() {
   return (
     <>
       <div className="mainContainer">
@@ -10,5 +10,3 @@ function App() {
     </>
   );
 }
-
-export default App;
