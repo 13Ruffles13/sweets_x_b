@@ -9,11 +9,13 @@ import ContactFooter from "../../Pages/ContactFooter/ContactFooter";
 export default function MainHomeRoute() {
   return (
     <>
-      <Home />
-      <Quotes />
-      <SweetOptions />
-      <SweetOffers />
-      <PastryShowCase />
+      <main>
+        <Home />
+        <Quotes />
+        <SweetOptions />
+        <SweetOffers />
+        <PastryShowCase />
+      </main>
       <Footer />
       <ContactFooter />
     </>
