@@ -3,7 +3,7 @@ import sweetsLogoTransparent from "../../Visuals/sweet-logos/Sweets_x_B_logo.jpg
 
 function Footer() {
   return (
-    <div className="FooterMainContainer">
+    <section className="FooterMainContainer" aria-label="Brand logo">
       <div className="FooterContent">
         <div className="FooterLogoWrapper">
           <img
@@ -13,7 +13,7 @@ function Footer() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
