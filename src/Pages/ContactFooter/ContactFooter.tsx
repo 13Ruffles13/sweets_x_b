@@ -17,6 +17,7 @@ function ContactFooter() {
             href="https://www.instagram.com/sweetsssxb/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit our Instagram page (opens in new window)"
           >
             <img
               id="InstagramIcon"
