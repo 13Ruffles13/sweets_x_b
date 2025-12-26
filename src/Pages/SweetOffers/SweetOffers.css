@@ -24,7 +24,7 @@
   min-height: 100vh;
 }
 
-.sweetOffersMainContainer h1 {
+.sweetOffersMainContainer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@
   transform: translateY(-5px);
 }
 
-.offersContainerBorder h2 {
+.offersContainerBorder h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
@@ -94,13 +94,13 @@
     font-size: 0.6rem;
   }
 
-  .sweetOffersMainContainer h1 {
+  .sweetOffersMainContainer h2 {
     font-size: 2.2rem;
   }
 }
 
 @media (min-width: 768px) {
-  .sweetOffersMainContainer h1 {
+  .sweetOffersMainContainer h2 {
     font-size: 2.4rem;
   }
 
@@ -117,7 +117,7 @@
     height: 450px;
   }
 
-  .offersContainerBorder h2 {
+  .offersContainerBorder h3 {
     font-size: 2rem;
   }
 }
@@ -134,7 +134,7 @@
   .offersContainerBorder p {
     font-size: 0.8rem;
   }
-  .sweetOffersMainContainer h1 {
+  .sweetOffersMainContainer h2 {
     font-size: 2.2rem;
   }
 }
@@ -158,7 +158,7 @@
     height: 700px;
   }
 
-  .sweetOffersMainContainer h1 {
+  .sweetOffersMainContainer h2 {
     font-size: 2.3rem;
     letter-spacing: 5px;
     word-spacing: 20px;

@@ -10,11 +10,11 @@ function SweetOptions() {
 
   return (
     <div className="sweetOptionsMainContainer">
-      <h1 id="sweetOptionsTitle">What you'll love</h1>
+      <h2 id="sweetOptionsTitle">What you'll love</h2>
       <div className="sweetOptionsGrid">
         <div className="sweetImageContainer" id="beignets">
           <div className="sweetImageDetails">
-            <h2>Beignets</h2>
+            <h3>Beignets</h3>
             <p>
               Light, pillowy delights dusted with sugar-pure bliss in every
               bite!
@@ -24,7 +24,7 @@ function SweetOptions() {
         </div>
         <div className="sweetImageContainer" id="blueberryMuffins">
           <div className="sweetImageDetails">
-            <h2>Blueberry Muffins</h2>
+            <h3>Blueberry Muffins</h3>
             <p>
               Moist, golden muffins bursting with juicy blueberries-baked to
               perfection.
@@ -38,9 +38,9 @@ function SweetOptions() {
             id="AlmondCreamCheesePoundCakeLink"
           >
             <div className="sweetImageDetails" id="AlmondCreamCheesePoundCake">
-              <h2 id="AlmondCreamCheesePoundCakeTitle">
+              <h3 id="AlmondCreamCheesePoundCakeTitle">
                 Almond Cream Cheese Pound Cake
-              </h2>
+              </h3>
               <p>
                 Soft, buttery cake topped with a gentle sprinkle of powdered
                 sugar-heavenly and irresistible

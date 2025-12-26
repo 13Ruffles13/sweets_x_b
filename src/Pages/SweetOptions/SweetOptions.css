@@ -25,7 +25,7 @@
   min-height: 100vh; /* replaced fixed 120vh with flexible */
 }
 
-.sweetOptionsMainContainer h1 {
+.sweetOptionsMainContainer h2 {
   color: var(--sweetPink);
   font-size: 70px;
   margin: 0 0 6.25rem;
@@ -85,7 +85,7 @@
   text-align: left;
 }
 
-.sweetImageDetails h2 {
+.sweetImageDetails h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -107,7 +107,7 @@
     gap: 2rem;
   }
 
-  .sweetOptionsMainContainer h1 {
+  .sweetOptionsMainContainer h2 {
     font-size: 3rem;
     margin-bottom: 100px;
   }
@@ -127,11 +127,11 @@
     gap: 2.5rem;
   }
 
-  .sweetOptionsMainContainer h1 {
+  .sweetOptionsMainContainer h2 {
     margin-bottom: 100px;
   }
 
-  .sweetImageDetails h2 {
+  .sweetImageDetails h3 {
     font-size: 1.75rem;
   }
 
@@ -149,7 +149,7 @@
     height: auto;
   }
 
-  .sweetOptionsMainContainer h1 {
+  .sweetOptionsMainContainer h2 {
     font-size: 3.5rem;
     position: relative;
     top: 5.5rem;
@@ -180,7 +180,7 @@
     font-style: italic;
   }
 
-  .sweetOptionsMainContainer h1 {
+  .sweetOptionsMainContainer h2 {
     font-size: 4rem;
     letter-spacing: 5px;
     word-spacing: 20px;

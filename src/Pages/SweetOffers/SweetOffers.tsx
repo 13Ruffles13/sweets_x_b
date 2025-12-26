@@ -3,7 +3,7 @@ import "./SweetOffers.css";
 function SweetOffers() {
   return (
     <div className="sweetOffersMainContainer">
-      <h1 id="sweetOffersTitle">SWEET OFFERS</h1>
+      <h2 id="sweetOffersTitle">SWEET OFFERS</h2>
       <table className="offersTable">
         <th className="offersTableHeaders">
           <tr>
@@ -12,7 +12,7 @@ function SweetOffers() {
                 href="https://www.instagram.com/sweetsssxb/"
                 id="instagramLink"
               >
-                <h1>SweetsXB Instagram</h1>
+                <h3>SweetsXB Instagram</h3>
                 <div className="whiteSugarHeart">
                   {" "}
                   <>&#129293;</>
@@ -32,7 +32,7 @@ function SweetOffers() {
         <th className="offersTableHeaders" id="tiktok">
           <tr>
             <div className="offersContainerBorder">
-              <h1>SweetsXB TikTok</h1>
+              <h3>SweetsXB TikTok</h3>
               <div className="whiteSugarHeart">
                 {" "}
                 <>&#129293;</>
@@ -52,7 +52,7 @@ function SweetOffers() {
         <th className="offersTableHeaders" id="newsletter">
           <tr>
             <div className="offersContainerBorder">
-              <h1>SweetsXB Newsletter</h1>
+              <h3>SweetsXB Newsletter</h3>
               <div className="whiteSugarHeart">
                 {" "}
                 <>&#129293;</>

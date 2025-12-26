@@ -13,7 +13,7 @@ function Home() {
           />
           <div className="homeTextContainer">
             <h2>Sweet Treats Crafted from Scratch</h2>
-            <h5>Taste the difference of fresh, homemade goodness.</h5>
+            <h3>Taste the difference of fresh, homemade goodness.</h3>
           </div>
         </div>
       </div>

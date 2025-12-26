@@ -7,9 +7,9 @@ function PastryShowCase() {
       {/* Left side: Text */}
       <div className="showCaseCol1">
         <div className="whiteSugarHeart">&#129293;</div>
-        <h1 id="pastryTitle">
+        <h2 id="pastryTitle">
           PASTRY <br /> PERFECTION
-        </h1>
+        </h2>
         <p className="pastryFeedText">
           Experience the magic of freshly baked sweets at SweetsXB. Imagine
           bitting into a sweet crafted with love and handled with care.
