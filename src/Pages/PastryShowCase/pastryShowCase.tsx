@@ -1,10 +1,9 @@
 import yellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 import "./pastryShowCase.css";
 
-function PastryShowCase() {
+export function PastryShowCase() {
   return (
     <div className="mainPastryShowCaseContainer">
-      {/* Left side: Text */}
       <div className="showCaseCol1">
         <div className="whiteSugarHeart">&#129293;</div>
         <h2 id="pastryTitle">
@@ -23,12 +22,9 @@ function PastryShowCase() {
         </p>
       </div>
 
-      {/* Right side: Image */}
       <div className="showCaseCol2">
         <img src={yellowCake} alt="Powder Sugar Yellow Cake" />
       </div>
     </div>
   );
 }
-
-export default PastryShowCase;

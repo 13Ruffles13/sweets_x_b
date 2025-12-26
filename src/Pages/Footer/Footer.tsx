@@ -1,7 +1,7 @@
 import "./Footer.css";
 import sweetsLogoTransparent from "../../Visuals/sweet-logos/Sweets_x_B_logo.jpg";
 
-function Footer() {
+export function Footer() {
   return (
     <section className="FooterMainContainer" aria-label="Brand logo">
       <div className="FooterContent">
@@ -16,5 +16,3 @@ function Footer() {
     </section>
   );
 }
-
-export default Footer;

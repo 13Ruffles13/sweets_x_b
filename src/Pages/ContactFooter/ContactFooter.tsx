@@ -1,7 +1,7 @@
 import "./ContactFooter.css";
 import SweetXB_InstagramIcon from "../../Visuals/contact-icons/icons8-instagram-50-white.png";
 
-function ContactFooter() {
+export function ContactFooter() {
   return (
     <footer className="mainContactFooter">
       <div className="contactFooterContent">
@@ -30,5 +30,3 @@ function ContactFooter() {
     </footer>
   );
 }
-
-export default ContactFooter;

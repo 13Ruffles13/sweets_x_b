@@ -1,6 +1,6 @@
 import "./quotes.css";
 
-function Quotes() {
+export function Quotes() {
   return (
     <>
       <div className="quotesMainContainer">
@@ -20,5 +20,3 @@ function Quotes() {
     </>
   );
 }
-
-export default Quotes;

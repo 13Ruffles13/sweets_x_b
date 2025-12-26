@@ -5,7 +5,7 @@ import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSuga
 import { useNavigate } from "react-router";
 import { isFeatureEnabled } from "../../Config/featureFlags";
 
-function SweetOptions() {
+export function SweetOptions() {
   const navigate = useNavigate();
 
   return (
@@ -61,5 +61,3 @@ function SweetOptions() {
     </div>
   );
 }
-
-export default SweetOptions;

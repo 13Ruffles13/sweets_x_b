@@ -1,6 +1,6 @@
 import "./SweetOffers.css";
 
-function SweetOffers() {
+export function SweetOffers() {
   return (
     <div className="sweetOffersMainContainer">
       <h2 id="sweetOffersTitle">SWEET OFFERS</h2>
@@ -72,5 +72,3 @@ function SweetOffers() {
     </div>
   );
 }
-
-export default SweetOffers;

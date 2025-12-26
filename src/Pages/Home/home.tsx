@@ -1,7 +1,7 @@
 import sweetsLogoTransparent from "../../Visuals/sweet-logos/Sweets_x_B_logo.jpg";
 import "./home.css";
 
-function Home() {
+export function Home() {
   return (
     <>
       <div className="homeContainer">
@@ -20,5 +20,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

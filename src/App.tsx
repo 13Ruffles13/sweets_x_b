@@ -1,4 +1,4 @@
-import RoutePaths from "./Routes/routes";
+import { RoutePaths } from "./Routes/routes";
 import "./App.css";
 
 function App() {
