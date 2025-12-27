@@ -1,6 +1,9 @@
 .homeTextContainer {
   color: var(--darkBlack);
   text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
 }
 
 .homeContainer {
@@ -12,7 +15,8 @@
   min-height: 100dvh; /* Dynamic viewport height for mobile */
   width: 100%;
   overflow: hidden;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
 }
 
 #breadBackground {
@@ -49,25 +53,56 @@
 }
 
 .sweetsLogoContainer h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0.05rem;
+  line-height: 1.2;
+  margin: 1rem 0 0.5rem 0;
+  word-wrap: break-word;
 }
 
 .sweetsLogoContainer h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Very small devices (320px - 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .homeContainer {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .sweetsLogoContainer h2 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .sweetsLogoContainer h3 {
+    font-size: 1.1rem;
+  }
+
+  #sweetsxb_logo {
+    width: 45vw;
+    max-width: 200px;
+  }
 }
 
 /* Small devices (≥ 576px)*/
 @media (min-width: 576px) {
+  .homeContainer {
+    padding: 1rem;
+  }
+
   #sweetsxb_logo {
     width: 30vw;
     max-width: 280px;
   }
   .sweetsLogoContainer h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .sweetsLogoContainer h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -101,10 +136,34 @@
 
 /* Extra large devices (≥ 1200px)*/
 @media (min-width: 1200px) {
+  .homeContainer {
+    padding: 2rem;
+  }
+
   #sweetsxb_logo {
     width: 18vw;
     max-width: 400px;
+    min-width: 300px;
   }
+  .sweetsLogoContainer h2 {
+    font-size: 4.5rem;
+    max-width: 800px;
+    margin: 1.5rem auto 1rem auto;
+  }
+  .sweetsLogoContainer h3 {
+    font-size: 2.8rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* Ultra-wide screens (≥ 1600px)*/
+@media (min-width: 1600px) {
+  .sweetsLogoContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .sweetsLogoContainer h2 {
     font-size: 5rem;
   }

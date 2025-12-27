@@ -3,20 +3,18 @@ import "./home.css";
 
 export function Home() {
   return (
-    <>
-      <div className="homeContainer">
-        <div className="sweetsLogoContainer">
-          <img
-            id="sweetsxb_logo"
-            src={sweetsLogoTransparent}
-            alt="Sweets x B Logo"
-          />
-          <div className="homeTextContainer">
-            <h2>Sweet Treats Crafted from Scratch</h2>
-            <h3>Taste the difference of fresh, homemade goodness.</h3>
-          </div>
+    <div className="homeContainer">
+      <div className="sweetsLogoContainer">
+        <img
+          id="sweetsxb_logo"
+          src={sweetsLogoTransparent}
+          alt="Sweets x B Logo"
+        />
+        <div className="homeTextContainer">
+          <h2>Sweet Treats Crafted from Scratch</h2>
+          <h3>Taste the difference of fresh, homemade goodness.</h3>
         </div>
       </div>
-    </>
+    </div>
   );
 }
