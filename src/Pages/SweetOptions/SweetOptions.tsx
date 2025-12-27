@@ -22,7 +22,7 @@ export function SweetOptions() {
           </div>
           <img src={SweetBeignets} alt="Sweet Beignets" />
         </div>
-        <div className="sweetImageContainer" id="blueberryMuffins">
+        <div className="sweetImageContainer" id="blueberry-muffins">
           <div className="sweetImageDetails">
             <h3>Blueberry Muffins</h3>
             <p>
@@ -35,10 +35,13 @@ export function SweetOptions() {
         <div className="sweetImageContainer">
           <a
             href="https://forms.gle/H6PMGL8RNCrVG9y79"
-            id="AlmondCreamCheesePoundCakeLink"
+            id="almond-cream-cheese-pound-cakeLink"
           >
-            <div className="sweetImageDetails" id="AlmondCreamCheesePoundCake">
-              <h3 id="AlmondCreamCheesePoundCakeTitle">
+            <div
+              className="sweetImageDetails"
+              id="almond-cream-cheese-pound-cake"
+            >
+              <h3 id="almond-cream-cheese-pound-cakeTitle">
                 Almond Cream Cheese Pound Cake
               </h3>
               <p>

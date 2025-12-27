@@ -1,10 +1,10 @@
 /* Hidden menu items - beignets and blueberryMuffins not currently offered */
 
-#AlmondCreamCheesePoundCakeTitle {
-  font-size: 24px;
+#almond-cream-cheese-pound-cakeTitle {
+  font-size: 1.5rem;
 }
 
-#AlmondCreamCheesePoundCakeLink {
+#almond-cream-cheese-pound-cakeLink {
   color: var(--whiteSnow);
   text-decoration: none;
 }
@@ -13,25 +13,27 @@
   display: none;
 }
 
-#blueberryMuffins {
+#blueberry-muffins {
   display: none;
 }
 
 .sweetOptionsMainContainer {
-  padding: 2rem 1rem;
+  padding: 1rem;
   display: grid;
   justify-content: center;
   text-align: center;
-  min-height: 100vh; /* replaced fixed 120vh with flexible */
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.sweetOptionsMainContainer h2 {
+#sweetOptionsTitle {
   color: var(--redLipStick);
-  font-size: 70px;
-  margin: 0 0 6.25rem;
-  position: relative;
-  top: 5.5rem;
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem 0;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .sweetOptionsGrid {
@@ -97,6 +99,31 @@
 
 /* -------------------- Responsive Breakpoints -------------------- */
 
+/* Very small devices (320px - 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .sweetOptionsMainContainer {
+    padding: 0.5rem;
+  }
+
+  #sweetOptionsTitle {
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+    line-height: 1.1;
+  }
+
+  .sweetImageContainer {
+    max-width: 280px;
+  }
+
+  .sweetImageDetails h3 {
+    font-size: 1.2rem;
+  }
+
+  .sweetImageDetails p {
+    font-size: 0.75rem;
+  }
+}
+
 /* Small devices (≥576px) */
 @media (min-width: 576px) {
   .sweetOptionsGrid {
@@ -104,9 +131,9 @@
     gap: 2rem;
   }
 
-  .sweetOptionsMainContainer h2 {
-    font-size: 3rem;
-    margin-bottom: 100px;
+  #sweetOptionsTitle {
+    font-size: 2.8rem;
+    margin: 1.5rem 0 2rem 0;
   }
 
   .sweetImageDetails p {
@@ -124,8 +151,9 @@
     gap: 2.5rem;
   }
 
-  .sweetOptionsMainContainer h2 {
-    margin-bottom: 100px;
+  #sweetOptionsTitle {
+    font-size: 3.2rem;
+    margin: 2rem 0 2.5rem 0;
   }
 
   .sweetImageDetails h3 {
@@ -146,10 +174,9 @@
     height: auto;
   }
 
-  .sweetOptionsMainContainer h2 {
+  #sweetOptionsTitle {
     font-size: 3.5rem;
-    position: relative;
-    top: 5.5rem;
+    margin: 2rem 0 2.5rem 0;
   }
 
   .sweetImageDetails p {
@@ -177,9 +204,36 @@
     font-style: italic;
   }
 
-  .sweetOptionsMainContainer h2 {
+  #sweetOptionsTitle {
     font-size: 4rem;
     letter-spacing: 5px;
     word-spacing: 20px;
+    margin: 2rem 0 2.5rem 0;
+  }
+
+  .sweetImageContainer {
+    max-width: 400px;
+  }
+}
+
+/* Ultra-wide screens (≥ 1600px)*/
+@media (min-width: 1600px) {
+  .sweetOptionsMainContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  #sweetOptionsTitle {
+    font-size: 4.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 2.5rem auto;
+  }
+
+  .sweetOptionsGrid {
+    max-width: 800px;
+  }
+
+  .sweetImageContainer {
+    max-width: 450px;
   }
 }
