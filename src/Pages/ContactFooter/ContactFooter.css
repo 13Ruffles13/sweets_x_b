@@ -1,48 +1,98 @@
+.mainContactFooter {
+  background-color: var(--darkBlack);
+  color: var(--whiteSnow);
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .contactFooterContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--darkBlack);
-  color: var(--whiteSnow);
-  padding: 1rem;
+  padding: 1.5rem 1rem;
+  min-height: 120px;
 }
 
 .footerContent {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 .footerContent h2 {
   font-weight: 800;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-decoration: underline;
+  margin: 0 0 1rem 0;
+  word-wrap: break-word;
+}
+
+address {
+  font-style: normal;
 }
 
 address p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
 }
 
 #InstagramIcon {
   width: auto;
   height: 2rem;
   margin-top: 0.5rem;
-  position: static;
+  transition: transform 0.3s ease;
 }
 
-/* Small tablets (≥ 576px) */
+#InstagramIcon:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------- Responsive Breakpoints -------------------- */
+
+/* Very small devices (320px - 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .contactFooterContent {
+    padding: 1rem 0.5rem;
+    min-height: 100px;
+  }
+
+  .footerContent h2 {
+    font-size: 1.4rem;
+  }
+
+  address p {
+    font-size: 0.8rem;
+  }
+
+  #InstagramIcon {
+    height: 1.8rem;
+  }
+}
+
+/* Small devices (≥576px) */
 @media (min-width: 576px) {
   .contactFooterContent {
-    flex-direction: row; /* inline row */
+    flex-direction: row;
     justify-content: space-around;
     text-align: left;
+    padding: 1.75rem 1.5rem;
+    min-height: 140px;
   }
 
   .footerContent {
     margin: 0 1rem;
+  }
+
+  .footerContent h2 {
+    font-size: 1.7rem;
+  }
+
+  address p {
+    font-size: 0.95rem;
   }
 
   #InstagramIcon {
@@ -50,10 +100,23 @@ address p {
   }
 }
 
-/*  Larger tablets (≥ 768px)  */
+/* Medium devices (≥768px) */
 @media (min-width: 768px) {
+  .contactFooterContent {
+    padding: 2rem 2rem;
+    min-height: 160px;
+  }
+
   .footerContent {
     margin: 0 2rem;
+  }
+
+  .footerContent h2 {
+    font-size: 1.9rem;
+  }
+
+  address p {
+    font-size: 1rem;
   }
 
   #InstagramIcon {
@@ -61,13 +124,78 @@ address p {
   }
 }
 
-/*  Desktop (≥ 1200px)  */
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .contactFooterContent {
+    padding: 2.25rem 3rem;
+    min-height: 180px;
+  }
+
+  .footerContent {
+    margin: 0 2.5rem;
+  }
+
+  .footerContent h2 {
+    font-size: 2rem;
+  }
+
+  address p {
+    font-size: 1.05rem;
+  }
+
+  #InstagramIcon {
+    height: 2.8rem;
+  }
+}
+
+/* Extra large devices (≥1200px) */
 @media (min-width: 1200px) {
   .contactFooterContent {
-    padding: 2rem 5rem;
+    padding: 2.5rem 4rem;
+    min-height: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footerContent {
+    margin: 0 3rem;
+  }
+
+  .footerContent h2 {
+    font-size: 2.2rem;
+  }
+
+  address p {
+    font-size: 1.1rem;
   }
 
   #InstagramIcon {
     height: 3rem;
+  }
+}
+
+/* Ultra-wide screens (≥ 1600px)*/
+@media (min-width: 1600px) {
+  .mainContactFooter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactFooterContent {
+    max-width: 1400px;
+    padding: 3rem 5rem;
+    min-height: 220px;
+  }
+
+  .footerContent h2 {
+    font-size: 2.4rem;
+  }
+
+  address p {
+    font-size: 1.15rem;
+  }
+
+  #InstagramIcon {
+    height: 3.2rem;
   }
 }

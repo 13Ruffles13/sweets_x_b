@@ -22,7 +22,7 @@ export function ContactFooter() {
             <img
               id="InstagramIcon"
               src={SweetXB_InstagramIcon}
-              alt="Instagram"
+              alt="Instagram icon - Follow SweetsXB"
             />
           </a>
         </div>
