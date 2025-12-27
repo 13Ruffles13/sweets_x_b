@@ -1,6 +1,9 @@
 #instagramLink {
   text-decoration: none;
   color: var(--darkBlack);
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #tiktok {
@@ -12,35 +15,45 @@
 }
 
 #sweetOffersTitle {
-  font-size: 45px;
   color: var(--darkBlack);
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .sweetOffersMainContainer {
   display: grid;
   background: var(--sweetPink);
-  padding: 3rem 1rem;
+  padding: 1rem;
   color: var(--darkBlack);
   min-height: 100vh;
-}
-
-.sweetOffersMainContainer h2 {
-  display: flex;
-  align-items: center;
+  max-height: 100vh;
+  box-sizing: border-box;
   justify-content: center;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  margin-top: 0 0 2rem;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 /* Grid layout for offers */
-.offersTable {
+.offersGrid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.offersCard {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Card Container */
@@ -49,9 +62,18 @@
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.05);
   width: 100%;
-  max-width: 350px;
+  height: auto;
+  max-height: 500px;
+  min-height: 400px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .offersContainerBorder:hover {
@@ -59,8 +81,9 @@
 }
 
 .offersContainerBorder h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
+  color: var(--darkBlack);
 }
 
 .offersContainerBorder .whiteSugarHeart {
@@ -70,97 +93,173 @@
 
 .offersContainerBorder p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  padding: 1rem;
+  font-size: 0.9rem;
   font-weight: 100;
   line-height: 1.5;
   color: var(--darkBlack);
+  margin: 0;
 }
 
-/* Responsive Breakpoints */
+/* -------------------- Responsive Breakpoints -------------------- */
 
-@media (min-width: 576px) {
-  .offersTable {
-    grid-template-columns: repeat(1, 2fr);
-    gap: 3rem;
+/* Very small devices (320px - 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .sweetOffersMainContainer {
+    padding: 0.5rem;
+  }
+
+  #sweetOffersTitle {
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+    line-height: 1.1;
+  }
+
+  .offersCard {
+    max-width: 300px;
   }
 
   .offersContainerBorder {
-    max-width: 350px;
-    height: 450px;
-  }
-
-  .offersContainerBorder p {
-    font-size: 0.6rem;
-  }
-
-  .sweetOffersMainContainer h2 {
-    font-size: 2.2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .sweetOffersMainContainer h2 {
-    font-size: 2.4rem;
-  }
-
-  .offersTable {
-    gap: 3rem;
-  }
-
-  .offersContainerBorder p {
-    font-size: 0.7rem;
-  }
-
-  .offersContainerBorder {
-    max-width: 400px;
-    height: 450px;
+    min-height: 350px;
+    padding: 1rem;
   }
 
   .offersContainerBorder h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
-}
 
-@media (min-width: 992px) {
-  .offersTable {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-  }
-  .offersContainerBorder {
-    max-width: 600px;
-    height: 600px;
-  }
   .offersContainerBorder p {
     font-size: 0.8rem;
   }
-  .sweetOffersMainContainer h2 {
-    font-size: 2.2rem;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .offersGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  #sweetOffersTitle {
+    font-size: 2.8rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .offersCard {
+    max-width: 380px;
+  }
+
+  .offersContainerBorder {
+    min-height: 420px;
+  }
+
+  .offersContainerBorder p {
+    font-size: 0.95rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .sweetOffersMainContainer {
-    padding: 5rem 2rem;
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .offersGrid {
+    gap: 2.5rem;
   }
 
-  .offersTable {
-    margin: 0 auto;
-    gap: 3rem;
+  #sweetOffersTitle {
+    font-size: 3.2rem;
+    margin: 2rem 0 2.5rem 0;
+  }
+
+  .offersCard {
+    max-width: 420px;
+  }
+
+  .offersContainerBorder {
+    min-height: 450px;
+  }
+
+  .offersContainerBorder h3 {
+    font-size: 1.8rem;
   }
 
   .offersContainerBorder p {
     font-size: 1rem;
   }
+}
 
-  .offersContainerBorder {
-    max-width: 600px;
-    height: 700px;
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .offersGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
 
-  .sweetOffersMainContainer h2 {
-    font-size: 2.3rem;
+  #sweetOffersTitle {
+    font-size: 3.5rem;
+    margin: 2rem 0 2.5rem 0;
+  }
+
+  .offersCard {
+    max-width: 500px;
+  }
+
+  .offersContainerBorder {
+    min-height: 500px;
+  }
+
+  .offersContainerBorder p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .sweetOffersMainContainer {
+    padding: 4rem 2rem;
+  }
+
+  .offersGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  #sweetOffersTitle {
+    font-size: 4rem;
     letter-spacing: 5px;
     word-spacing: 20px;
+    margin: 2rem 0 2.5rem 0;
+  }
+
+  .offersCard {
+    max-width: 600px;
+  }
+
+  .offersContainerBorder {
+    min-height: 550px;
+  }
+
+  .offersContainerBorder p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Ultra-wide screens (≥ 1600px)*/
+@media (min-width: 1600px) {
+  .sweetOffersMainContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  #sweetOffersTitle {
+    font-size: 4.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 2.5rem auto;
+  }
+
+  .offersGrid {
+    max-width: 800px;
+  }
+
+  .offersCard {
+    max-width: 650px;
   }
 }
