@@ -1,39 +1,42 @@
 .mainPastryShowCaseContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 50/50 desktop */
+  grid-template-columns: 1fr; /* Mobile first - stacked */
   min-height: 100vh;
   background-color: var(--whiteSnow);
+  box-sizing: border-box;
 }
 
 .showCaseCol1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* align text to left on desktop */
-  padding: 4rem;
+  align-items: center; /* Mobile first - centered */
+  padding: 2rem;
+  text-align: center;
 }
 
 .whiteSugarHeart {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #pastryTitle {
-  font-size: 4rem;
-  margin: 0 0 2rem;
-  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.1rem;
   line-height: 1.2;
+  word-wrap: break-word;
 }
 
 .pastryFeedText {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.05rem;
-  max-width: 90%;
-  text-align: left; /* keep text aligned left */
+  max-width: 100%;
+  text-align: center;
 }
 
 .showCaseCol2 {
@@ -47,35 +50,148 @@
   display: block;
 }
 
-/* -------------------------- */
-/* Mobile Responsive           */
-/* -------------------------- */
-@media (max-width: 768px) {
-  .mainPastryShowCaseContainer {
-    grid-template-columns: 1fr; /* stack columns */
-    grid-template-rows: auto auto;
-  }
+/* -------------------- Responsive Breakpoints -------------------- */
 
+/* Very small devices (320px - 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
   .showCaseCol1 {
-    padding: 2rem;
-    align-items: center; /* center text on mobile */
-    text-align: center;
+    padding: 1.5rem;
   }
 
   .whiteSugarHeart {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   #pastryTitle {
-    font-size: 45px;
-    line-height: 1.3;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    line-height: 1.1;
   }
 
   .pastryFeedText {
-    font-size: 0.75rem;
-    max-width: 100%;
-    margin: 1.5rem auto;
-    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .showCaseCol1 {
+    padding: 2.5rem;
+  }
+
+  .whiteSugarHeart {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #pastryTitle {
+    font-size: 2.8rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .pastryFeedText {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .mainPastryShowCaseContainer {
+    grid-template-columns: 1fr 1fr; /* Two columns on tablet+ */
+  }
+
+  .showCaseCol1 {
+    align-items: flex-start; /* Left align on larger screens */
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .whiteSugarHeart {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #pastryTitle {
+    font-size: 3.2rem;
+    margin: 0 0 2rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .pastryFeedText {
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 95%;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .showCaseCol1 {
+    padding: 3.5rem;
+  }
+
+  .whiteSugarHeart {
+    font-size: 3.5rem;
+  }
+
+  #pastryTitle {
+    font-size: 3.5rem;
+    letter-spacing: 0.18rem;
+  }
+
+  .pastryFeedText {
+    font-size: 1.15rem;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .showCaseCol1 {
+    padding: 4rem;
+  }
+
+  .whiteSugarHeart {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #pastryTitle {
+    font-size: 4rem;
+    margin: 0 0 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .pastryFeedText {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+}
+
+/* Ultra-wide screens (≥ 1600px)*/
+@media (min-width: 1600px) {
+  .mainPastryShowCaseContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .showCaseCol1 {
+    padding: 5rem;
+  }
+
+  .whiteSugarHeart {
+    font-size: 4.5rem;
+  }
+
+  #pastryTitle {
+    font-size: 4.5rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .pastryFeedText {
+    font-size: 1.3rem;
+    max-width: 85%;
   }
 }
