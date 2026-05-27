@@ -1,7 +1,7 @@
-import { describe, test, expect } from "vitest";
 import { createRoot } from "react-dom/client";
-import { App } from "./App.tsx";
 import { MemoryRouter } from "react-router";
+import { describe, expect, test } from "vitest";
+import { App } from "./App.tsx";
 
 describe("Main App Component", () => {
   test("Renders App Component", () => {

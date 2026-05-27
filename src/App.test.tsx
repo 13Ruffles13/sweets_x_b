@@ -1,6 +1,6 @@
-import { describe, test, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
+import { describe, expect, test } from "vitest";
 import { App } from "./App.tsx";
 
 describe("App Component", () => {

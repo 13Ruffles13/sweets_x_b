@@ -1,9 +1,9 @@
 import "./SweetOptions.css";
+import { useNavigate } from "react-router";
+import { isFeatureEnabled } from "../../Config/featureFlags";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
-import { useNavigate } from "react-router";
-import { isFeatureEnabled } from "../../Config/featureFlags";
 
 export function SweetOptions() {
   const navigate = useNavigate();

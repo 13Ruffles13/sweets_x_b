@@ -1,5 +1,5 @@
-import { MemoryRouter } from "react-router";
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router";
 import { describe, expect, test } from "vitest";
 import { RoutePaths } from "./routes";
 
