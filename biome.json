@@ -1,7 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-  "files": { "includes": ["**", "!!**/dist"] },
+  "files": {
+    "includes": [
+      "**",
+      "!!**/dist",
+      "!src/Visuals/sweet-logos/Sweets_x_B_logo_icon.svg"
+    ]
+  },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
