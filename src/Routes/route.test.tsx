@@ -5,11 +5,9 @@ import { RoutePaths } from "./routes";
 
 describe("RoutePaths component", () => {
   test("renders homepage route", () => {
-    // Arrange
-
-    // Act
+    // Arrange and Act
     render(
-      <MemoryRouter initialEntries={["/sweets_x_b"]}>
+      <MemoryRouter initialEntries={["/"]}>
         <RoutePaths />
       </MemoryRouter>,
     );
@@ -19,10 +17,12 @@ describe("RoutePaths component", () => {
   });
 
   test("renders customer orders route", () => {
-    // Arrange
-    window.location.hash = "#/orders";
-    // Act
-    render(<RoutePaths />);
+    // Arrange and Act
+    render(
+      <MemoryRouter initialEntries={["/orders"]}>
+        <RoutePaths />
+      </MemoryRouter>,
+    );
 
     // Assert
     expect(screen.getByText(/customerorders/i)).toBeDefined();
