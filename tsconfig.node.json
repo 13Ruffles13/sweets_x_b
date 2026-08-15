@@ -1,19 +1,21 @@
 /*
-  Target Environment: Node runtime
+  Target Environment: Node runtime (tooling or config)
 
   Key Purposes:
-  - Build tools and local configs
+  - Type-checks Node.js scripts and config files
   - Vite.config.ts or script files
+  - Use modern ES module and bundler-compatible resolution
 
   Target API or Libraries:
   - Node.js APIs
   - fs, path, etc.
+  - Cypress config
 */
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2023"],
+    "target": "es2025",
+    "lib": ["ES2025"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -32,5 +34,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "cypress.config.ts"]
 }

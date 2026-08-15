@@ -1,10 +1,10 @@
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 
 /*
   https://vite.dev/config/
 
-  Target Environment: JS that vite handles
+  Target Environment: Node.js runtime (build and dev tooling)
 
   Key Purposes:
   - Vite configuration
@@ -19,7 +19,6 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   base: "/",
-  // @ts-expect-error: Vitest=specific config not recognized by Vite types
   test: {
     environment: "jsdom",
     setupFiles: "./src/Test/setupTests.ts",

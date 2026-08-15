@@ -3,11 +3,12 @@ import { defineConfig } from "cypress";
 /*
   https://docs.cypress.io/guides/references/configuration
 
-  Target Environment: Cypress runtime (frontend)
+  Target Environment: Cypress Node.js runtime (test configuration)
 
   Key Purposes:
   - Cypress configuration
-  - Cypress plugins configuration
+  - Component testing configuration
+  - E2E testing configuration
   
   Target API or Libraries:
   - Cypress APIs

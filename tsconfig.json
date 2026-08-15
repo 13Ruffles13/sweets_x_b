@@ -1,13 +1,13 @@
 /*
-  Target Environment: The orchestration runtime
+  Target Environment: Root TS project configuration
 
   Key Purposes:
-  - Root file
+  - Root TS config. Serves as the entry point for the project's TS project references
   - Binds all sub-configs together via project references
 
   Target API or Libraries:
   - None directly
-  - Points IDEs to other configs
+  - References tsconfig.app.json and tsconfig.node.json
 */
 {
   "files": [],
