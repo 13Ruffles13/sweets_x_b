@@ -1,5 +1,18 @@
 import { defineConfig } from "cypress";
 
+/*
+  https://docs.cypress.io/guides/references/configuration
+
+  Target Environment: Cypress runtime (frontend)
+
+  Key Purposes:
+  - Cypress configuration
+  - Cypress plugins configuration
+  
+  Target API or Libraries:
+  - Cypress APIs
+*/
+
 export default defineConfig({
   component: {
     devServer: {

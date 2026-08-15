@@ -1,3 +1,14 @@
+/*
+  Target Environment: The orchestration runtime
+
+  Key Purposes:
+  - Root file
+  - Binds all sub-configs together via project references
+
+  Target API or Libraries:
+  - None directly
+  - Points IDEs to other configs
+*/
 {
   "files": [],
   "references": [
