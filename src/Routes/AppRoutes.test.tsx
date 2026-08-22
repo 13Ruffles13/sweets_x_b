@@ -1,14 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import { describe, expect, test } from "vitest";
-import { RoutePaths } from "./routes";
+import { AppRoutes } from "./AppRoutes";
 
-describe("RoutePaths component", () => {
+describe("AppRoutes component", () => {
   test("renders homepage route", () => {
     // Arrange and Act
     render(
       <MemoryRouter initialEntries={["/"]}>
-        <RoutePaths />
+        <AppRoutes />
       </MemoryRouter>,
     );
 
@@ -20,7 +20,7 @@ describe("RoutePaths component", () => {
     // Arrange and Act
     render(
       <MemoryRouter initialEntries={["/orders"]}>
-        <RoutePaths />
+        <AppRoutes />
       </MemoryRouter>,
     );
 
