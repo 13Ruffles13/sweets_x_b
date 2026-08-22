@@ -6,13 +6,13 @@ export function Home() {
     <div className="homeContainer">
       <div className="sweetsLogoContainer">
         <img
-          id="sweetsxb_logo"
+          className="sweetsLogo"
           src={sweetsLogoTransparent}
           alt="Sweets x B Logo"
         />
         <div className="homeTextContainer">
           <h2>Sweet Treats Crafted from Scratch</h2>
-          <h3>Taste the difference of fresh, homemade goodness.</h3>
+          <p>Taste the difference of fresh, homemade goodness.</p>
         </div>
       </div>
     </div>

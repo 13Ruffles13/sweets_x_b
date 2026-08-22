@@ -1,173 +1,85 @@
-.homeTextContainer {
-  color: var(--darkBlack);
-  text-align: center;
-  word-wrap: break-word;
-  hyphens: auto;
-  max-width: 100%;
-}
-
 .homeContainer {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  min-height: 100dvh;
   width: 100%;
   overflow: hidden;
   padding: 1rem 0.5rem;
   box-sizing: border-box;
 }
 
-#breadBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  filter: brightness(78%);
-}
-
 .sweetsLogoContainer {
   position: relative;
   z-index: 1;
-  text-align: center;
-  font-size: 2rem;
-  padding: 0.5rem;
-  color: var(--whiteSnow);
   width: 100%;
   max-width: 90vw;
+  padding: 0.5rem;
+  text-align: center;
 }
 
-#sweetsxb_logo {
-  width: 40vw;
-  max-width: 250px;
+.sweetsLogo {
+  width: clamp(200px, 25vw, 400px);
   height: auto;
-  border-radius: 50%;
   border: 4.2px solid var(--sweetPink);
+  border-radius: 50%;
   background-color: var(--whiteSnow);
   overflow: hidden;
   filter: brightness(1.05) contrast(1.02) opacity(0.97);
 }
 
+.homeTextContainer {
+  max-width: 100%;
+  color: var(--darkBlack);
+  text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 .sweetsLogoContainer h2 {
-  font-size: 2rem;
-  letter-spacing: 0.05rem;
+  max-width: 800px;
+  margin: 1rem auto 0.5rem;
+  font-size: clamp(1.8rem, 4vw, 5rem);
   line-height: 1.2;
-  margin: 1rem 0 0.5rem 0;
-  word-wrap: break-word;
+  letter-spacing: 0.05rem;
+  overflow-wrap: break-word;
 }
 
-.sweetsLogoContainer h3 {
-  font-size: 1.2rem;
+.sweetsLogoContainer p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: clamp(1.1rem, 2.5vw, 3rem);
   line-height: 1.4;
-  margin: 0;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-/* Very small devices (320px - 575px) */
-@media (min-width: 320px) and (max-width: 575px) {
+/* Small screens */
+@media (max-width: 575px) {
   .homeContainer {
     padding: 0.5rem 0.25rem;
   }
 
-  .sweetsLogoContainer h2 {
-    font-size: 1.8rem;
-    line-height: 1.1;
-  }
-
-  .sweetsLogoContainer h3 {
-    font-size: 1.1rem;
-  }
-
-  #sweetsxb_logo {
-    width: 45vw;
-    max-width: 200px;
+  .sweetsLogo {
+    width: clamp(180px, 45vw, 200px);
   }
 }
 
-/* Small devices (≥ 576px)*/
+/* Larger screens */
 @media (min-width: 576px) {
   .homeContainer {
     padding: 1rem;
   }
-
-  #sweetsxb_logo {
-    width: 30vw;
-    max-width: 280px;
-  }
-  .sweetsLogoContainer h2 {
-    font-size: 2.4rem;
-  }
-  .sweetsLogoContainer h3 {
-    font-size: 1.4rem;
-  }
 }
 
-/* Medium devices (≥ 768px)*/
-@media (min-width: 768px) {
-  #sweetsxb_logo {
-    width: 25vw;
-    max-width: 320px;
-  }
-  .sweetsLogoContainer h2 {
-    font-size: 3.5rem;
-  }
-  .sweetsLogoContainer h3 {
-    font-size: 2rem;
-  }
-}
-
-/* Large devices (≥ 992px)*/
-@media (min-width: 992px) {
-  #sweetsxb_logo {
-    width: 20vw;
-    max-width: 350px;
-  }
-  .sweetsLogoContainer h2 {
-    font-size: 4.2rem;
-  }
-  .sweetsLogoContainer h3 {
-    font-size: 2.5rem;
-  }
-}
-
-/* Extra large devices (≥ 1200px)*/
+/* Extra-large screens */
 @media (min-width: 1200px) {
   .homeContainer {
     padding: 2rem;
   }
 
-  #sweetsxb_logo {
-    width: 18vw;
-    max-width: 400px;
-    min-width: 300px;
-  }
-  .sweetsLogoContainer h2 {
-    font-size: 4.5rem;
-    max-width: 800px;
-    margin: 1.5rem auto 1rem auto;
-  }
-  .sweetsLogoContainer h3 {
-    font-size: 2.8rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-}
-
-/* Ultra-wide screens (≥ 1600px)*/
-@media (min-width: 1600px) {
   .sweetsLogoContainer {
     max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .sweetsLogoContainer h2 {
-    font-size: 5rem;
-  }
-  .sweetsLogoContainer h3 {
-    font-size: 3rem;
   }
 }
