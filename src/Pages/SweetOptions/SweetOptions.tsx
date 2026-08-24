@@ -1,66 +1,94 @@
 import "./SweetOptions.css";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 import { isFeatureEnabled } from "../../Config/featureFlags";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 
+const sweetOptions = [
+  {
+    id: "beignets",
+    title: "Beignets",
+    description:
+      "Light, pillowy delights dusted with sugar—pure bliss in every bite!",
+    image: SweetBeignets,
+    alt: "Sweet Beignets",
+    comingSoon: true,
+  },
+  {
+    id: "blueberry-muffins",
+    title: "Blueberry Muffins",
+    description:
+      "Moist, golden muffins bursting with juicy blueberries—baked to perfection.",
+    image: SweetBlueBerryMuffins,
+    alt: "Sweet Blueberry Muffins",
+    comingSoon: true,
+  },
+  {
+    id: "almond-cream-cheese-pound-cake",
+    title: "Almond Cream Cheese Pound Cake",
+    description:
+      "Soft, buttery cake topped with a gentle sprinkle of powdered sugar—heavenly and irresistible.",
+    image: AlmondCreamCheesePoundCake,
+    alt: "Almond Cream Cheese Pound Cake",
+    comingSoon: false,
+  },
+];
+
 export function SweetOptions() {
-  const navigate = useNavigate();
+  const ordersEnabled = isFeatureEnabled("enableOrdersPage");
 
   return (
-    <div className="sweetOptionsMainContainer">
-      <h2 id="sweetOptionsTitle">What you'll love</h2>
+    <section className="sweetOptionsMainContainer">
+      <h2 className="sweetOptionsTitle">What you'll love</h2>
+
       <div className="sweetOptionsGrid">
-        <div className="sweetImageContainer" id="beignets">
-          <div className="sweetImageDetails">
-            <h3>Beignets</h3>
-            <p>
-              Light, pillowy delights dusted with sugar-pure bliss in every
-              bite!
-            </p>
-          </div>
-          <img src={SweetBeignets} alt="Sweet Beignets" />
-        </div>
-        <div className="sweetImageContainer" id="blueberry-muffins">
-          <div className="sweetImageDetails">
-            <h3>Blueberry Muffins</h3>
-            <p>
-              Moist, golden muffins bursting with juicy blueberries-baked to
-              perfection.
-            </p>
-          </div>
-          <img src={SweetBlueBerryMuffins} alt="Sweet Blueberry Muffins" />
-        </div>
-        <div className="sweetImageContainer">
-          <a
-            href="https://forms.gle/H6PMGL8RNCrVG9y79"
-            id="almond-cream-cheese-pound-cakeLink"
-          >
-            <div
-              className="sweetImageDetails"
-              id="almond-cream-cheese-pound-cake"
-            >
-              <h3 id="almond-cream-cheese-pound-cakeTitle">
-                Almond Cream Cheese Pound Cake
-              </h3>
-              <p>
-                Soft, buttery cake topped with a gentle sprinkle of powdered
-                sugar-heavenly and irresistible
-              </p>
-            </div>
-            <img
-              src={AlmondCreamCheesePoundCake}
-              alt="Almond Cream Cheese Pound Cake"
-              onClick={
-                isFeatureEnabled("enableOrdersPage")
-                  ? () => void navigate("/orders")
-                  : undefined
-              }
-            />
-          </a>
-        </div>
+        {sweetOptions.map((sweet) => {
+          const sweetCard = (
+            <>
+              <div className="sweetImageDetails">
+                {sweet.comingSoon && (
+                  <span className="comingSoonBadge">Coming Soon</span>
+                )}
+
+                <h3>{sweet.title}</h3>
+
+                <p>{sweet.description}</p>
+              </div>
+
+              <img src={sweet.image} alt={sweet.alt} />
+            </>
+          );
+
+          if (sweet.comingSoon) {
+            return (
+              <article
+                className="sweetImageContainer comingSoon"
+                key={sweet.id}
+              >
+                {sweetCard}
+              </article>
+            );
+          }
+
+          return (
+            <article className="sweetImageContainer" key={sweet.id}>
+              {ordersEnabled ? (
+                <Link to="/orders" className="sweetImageLink">
+                  {sweetCard}
+                </Link>
+              ) : (
+                <a
+                  href="https://forms.gle/H6PMGL8RNCrVG9y79"
+                  className="sweetImageLink"
+                >
+                  {sweetCard}
+                </a>
+              )}
+            </article>
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 }

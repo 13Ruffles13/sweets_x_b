@@ -1,55 +1,41 @@
-/* Hidden menu items - beignets and blueberryMuffins not currently offered */
-
-#almond-cream-cheese-pound-cakeTitle {
-  font-size: 1.5rem;
-}
-
-#almond-cream-cheese-pound-cakeLink {
-  color: var(--whiteSnow);
-  text-decoration: none;
-}
-
-#beignets {
-  display: none;
-}
-
-#blueberry-muffins {
-  display: none;
-}
-
 .sweetOptionsMainContainer {
-  padding: 1rem;
   display: grid;
   justify-content: center;
-  text-align: center;
   min-height: 100vh;
+  min-height: 100dvh;
+  padding: 1rem;
   box-sizing: border-box;
+  text-align: center;
 }
 
-#sweetOptionsTitle {
+.sweetOptionsTitle {
+  margin: 1rem 0 1.5rem;
   color: var(--redLipStick);
-  font-size: 2.5rem;
-  margin: 1rem 0 1.5rem 0;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  word-wrap: break-word;
+  font-size: clamp(2rem, 4vw, 4.5rem);
   line-height: 1.2;
   text-align: center;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  overflow-wrap: break-word;
 }
 
 .sweetOptionsGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
   justify-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sweetImageContainer {
   position: relative;
-  overflow: hidden;
-  border-radius: 2rem;
+  width: 100%;
   max-width: 350px;
   aspect-ratio: 1 / 1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
   transition: transform 0.3s ease;
 }
 
@@ -57,12 +43,20 @@
   transform: translateY(-6px);
 }
 
-.sweetImageContainer img {
+.sweetImageLink {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  color: var(--whiteSnow);
+  text-decoration: none;
+}
+
+.sweetImageContainer img {
   display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 2rem;
+  object-fit: cover;
   filter: brightness(85%);
 }
 
@@ -70,170 +64,69 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.05);
   z-index: 0;
+  background: rgb(0 0 0 / 5%);
+  pointer-events: none;
 }
 
 .sweetImageDetails {
   position: absolute;
+  right: 1.5rem;
   bottom: 1.5rem;
   left: 1.5rem;
-  right: 1.5rem;
-  color: var(--whiteSnow);
   z-index: 1;
+  color: var(--whiteSnow);
   text-align: left;
+  pointer-events: none;
 }
 
 .sweetImageDetails h3 {
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
 }
 
 .sweetImageDetails p {
-  font-size: 12px;
-  line-height: 1.5;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.75rem, 1.5vw, 0.92rem);
   font-style: italic;
+  line-height: 1.5;
 }
 
-/* -------------------- Responsive Breakpoints -------------------- */
-
-/* Very small devices (320px - 575px) */
-@media (min-width: 320px) and (max-width: 575px) {
-  .sweetOptionsMainContainer {
-    padding: 0.5rem;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 2rem;
-    margin: 1rem 0 1rem 0;
-    line-height: 1.1;
-  }
-
-  .sweetImageContainer {
-    max-width: 280px;
-  }
-
-  .sweetImageDetails h3 {
-    font-size: 1.2rem;
-  }
-
-  .sweetImageDetails p {
-    font-size: 0.75rem;
-  }
+.comingSoonBadge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--sweetPink);
+  color: var(--whiteSnow);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 
-/* Small devices (≥576px) */
-@media (min-width: 576px) {
-  .sweetOptionsGrid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 2.8rem;
-    margin: 1.5rem 0 2rem 0;
-  }
-
-  .sweetImageDetails p {
-    font-size: 0.88rem;
-    font-style: italic;
-  }
+.comingSoon {
+  cursor: default;
 }
 
-/* Medium devices (≥768px) */
 @media (min-width: 768px) {
   .sweetOptionsGrid {
-    width: auto;
-    height: auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2.5rem;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 3.2rem;
-    margin: 2rem 0 2.5rem 0;
-  }
-
-  .sweetImageDetails h3 {
-    font-size: 1.75rem;
-  }
-
-  .sweetImageDetails p {
-    font-size: 0.9rem;
-    font-style: italic;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Large devices (≥992px) */
-@media (min-width: 992px) {
-  .sweetOptionsGrid {
-    grid-template-columns: repeat(1, 1fr);
-    width: auto;
-    height: auto;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 3.5rem;
-    margin: 2rem 0 2.5rem 0;
-  }
-
-  .sweetImageDetails p {
-    font-size: 0.91rem;
-    font-style: italic;
-  }
-}
-
-/* Extra large devices (≥1200px) */
 @media (min-width: 1200px) {
   .sweetOptionsMainContainer {
     padding: 4rem 2rem;
   }
 
   .sweetOptionsGrid {
-    /* TODO: Update to 3-column layout when menu expands beyond current single item */
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-  }
-
-  .sweetImageDetails p {
-    font-size: 0.92rem;
-    font-style: italic;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 4rem;
-    letter-spacing: 5px;
-    word-spacing: 20px;
-    margin: 2rem 0 2.5rem 0;
   }
 
   .sweetImageContainer {
     max-width: 400px;
-  }
-}
-
-/* Ultra-wide screens (≥ 1600px)*/
-@media (min-width: 1600px) {
-  .sweetOptionsMainContainer {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  #sweetOptionsTitle {
-    font-size: 4.5rem;
-    max-width: 1200px;
-    margin: 2rem auto 2.5rem auto;
-  }
-
-  .sweetOptionsGrid {
-    max-width: 800px;
-  }
-
-  .sweetImageContainer {
-    max-width: 450px;
   }
 }
