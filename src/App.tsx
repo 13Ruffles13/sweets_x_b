@@ -1,13 +1,13 @@
+import { HashRouter } from "react-router";
 import { AppRoutes } from "./Routes/AppRoutes";
 import "./App.css";
-import { HashRouter } from "react-router";
 
 export function App() {
   return (
-    <div className="mainContainer">
-      <HashRouter>
+    <HashRouter>
+      <div className="mainContainer">
         <AppRoutes />
-      </HashRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
