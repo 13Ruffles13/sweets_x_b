@@ -10,7 +10,7 @@ export function Footer() {
       <div className="FooterContent">
         <div className="FooterLogoWrapper">
           <img
-            id="sweetsxb_logo_footer"
+            className="sweetsxbLogoFooter"
             src={sweetsLogoTransparent}
             alt="Sweets x B Logo - Hand-crafted sweets bakery"
           />
