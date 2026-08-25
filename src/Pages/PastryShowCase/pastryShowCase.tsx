@@ -6,10 +6,14 @@ export function PastryShowCase() {
   return (
     <div className="mainPastryShowCaseContainer">
       <div className="showCaseCol1">
-        <HeartIcon />
-        <h2 id="pastryTitle">
+        <div className="pastryShowCaseHeart">
+          <HeartIcon />
+        </div>
+
+        <h2 className="pastryTitle">
           PASTRY <br /> PERFECTION
         </h2>
+
         <p className="pastryFeedText">
           Experience the magic of freshly baked sweets at SweetsXB. Imagine
           biting into a sweet crafted with love and handled with care.
