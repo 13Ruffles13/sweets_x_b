@@ -4,8 +4,9 @@ import { isFeatureEnabled } from "../../Config/featureFlags";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
+import type { sweetOptionContract } from "./Contract";
 
-const sweetOptions = [
+export const sweetOptions: sweetOptionContract[] = [
   {
     id: "beignets",
     title: "Beignets",
@@ -14,6 +15,7 @@ const sweetOptions = [
     image: SweetBeignets,
     alt: "Sweet Beignets",
     comingSoon: true,
+    disabledItem: true,
   },
   {
     id: "blueberry-muffins",
@@ -23,6 +25,7 @@ const sweetOptions = [
     image: SweetBlueBerryMuffins,
     alt: "Sweet Blueberry Muffins",
     comingSoon: true,
+    disabledItem: true,
   },
   {
     id: "almond-cream-cheese-pound-cake",
@@ -32,6 +35,7 @@ const sweetOptions = [
     image: AlmondCreamCheesePoundCake,
     alt: "Almond Cream Cheese Pound Cake",
     comingSoon: false,
+    disabledItem: false,
   },
 ];
 
@@ -44,6 +48,9 @@ export function SweetOptions() {
 
       <div className="sweetOptionsGrid">
         {sweetOptions.map((sweet) => {
+          if (sweet.disabledItem) {
+            return null;
+          }
           const sweetCard = (
             <>
               <div className="sweetImageDetails">
