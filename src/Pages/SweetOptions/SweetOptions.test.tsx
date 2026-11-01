@@ -10,14 +10,17 @@ vi.mock("../../Config/featureFlags", () => ({
 
 describe("SweetOptions", () => {
   test("should display available sweet options and identify coming soon items", () => {
+    // Arrange
     vi.mocked(isFeatureEnabled).mockReturnValue(false);
 
+    // Act
     render(
       <MemoryRouter>
         <SweetOptions />
       </MemoryRouter>,
     );
 
+    // Assert
     expect(
       screen.getByRole("heading", { name: "What you'll love" }),
     ).toBeInTheDocument();
