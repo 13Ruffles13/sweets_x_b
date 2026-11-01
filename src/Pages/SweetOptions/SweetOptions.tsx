@@ -1,6 +1,8 @@
 import "./SweetOptions.css";
 import { Link } from "react-router";
 import { isFeatureEnabled } from "../../Config/featureFlags";
+import BananaBreadLoaf from "../../Visuals/sweets-to-order/banana_bread_loaf.png";
+import PumpkinCreamCheeseMuffin from "../../Visuals/sweets-to-order/pumpkin_creamcheese_muffin.png";
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
@@ -34,6 +36,24 @@ export const sweetOptions: sweetOptionContract[] = [
       "Soft, buttery cake topped with a gentle sprinkle of powdered sugar—heavenly and irresistible.",
     image: AlmondCreamCheesePoundCake,
     alt: "Almond Cream Cheese Pound Cake",
+    comingSoon: false,
+    disabledItem: false,
+  },
+  {
+    id: "pumpkin-cream-cheese-muffin",
+    title: "Pumpkin Cream Cheese Muffin",
+    description: "Moist pumpkin muffin with a luscious cream cheese center.",
+    image: PumpkinCreamCheeseMuffin,
+    alt: "Pumpkin Cream Cheese Muffin",
+    comingSoon: false,
+    disabledItem: false,
+  },
+  {
+    id: "banana-bread-loaf",
+    title: "Banana Bread Loaf",
+    description: "Moist and aromatic banana bread.",
+    image: BananaBreadLoaf,
+    alt: "Banana Bread Loaf",
     comingSoon: false,
     disabledItem: false,
   },
