@@ -28,7 +28,7 @@
     "cypress:run": "cypress run",
     "migrate": "biome migrate",
     "migrate:write": "biome migrate --write",
-    "fresh-install": "powershell -Command \"Remove-Item -Recurse -Force node_modules; npm ci\"",
+    "clean": "npm ci",
     "update": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
@@ -37,7 +37,7 @@
     "react-router": "^8.5.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.8",
+    "@biomejs/biome": "^2.6.8",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^8.0.0",
     "@testing-library/react": "^16.3.3",
