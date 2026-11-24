@@ -48,12 +48,12 @@
     "@vitejs/plugin-react": "^6.3.0",
     "@vitest/coverage-v8": "^5.1.1",
     "axe-core": "^4.14.1",
-    "cypress": "^16.3.0",
+    "cypress": "^15.0.0",
     "cypress-axe": "^1.7.0",
     "jsdom": "^31.0.1",
-    "knip": "^6.46.1",
+    "knip": "^6.48.0",
     "typescript": "^7.0.2",
-    "undici-types": "^8.12.4",
+    "undici-types": "^8.13.1",
     "vite": "^8.3.8",
     "vitest": "^5.1.1"
   }
