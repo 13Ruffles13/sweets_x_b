@@ -105,10 +105,7 @@ export function SweetOptions() {
                   {sweetCard}
                 </Link>
               ) : (
-                <a
-                  href="https://forms.gle/H6PMGL8RNCrVG9y79"
-                  className="sweetImageLink"
-                >
+                <a href="https://ig.me/m/sweetsssxb" className="sweetImageLink">
                   {sweetCard}
                 </a>
               )}
