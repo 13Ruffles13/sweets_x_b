@@ -3,6 +3,7 @@
   display: grid;
   justify-content: center;
   min-height: 100vh;
+  /* biome-ignore lint/suspicious/noDuplicateProperties: Fallback for browsers that do not support dvh. */
   min-height: 100dvh;
   padding: 1rem;
   box-sizing: border-box;

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
+  /* biome-ignore lint/suspicious/noDuplicateProperties: Fallback for browsers that do not support dvh. */
   min-height: 100dvh;
   box-sizing: border-box;
   background-color: var(--whiteSnow);

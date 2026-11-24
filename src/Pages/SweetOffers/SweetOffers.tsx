@@ -1,5 +1,5 @@
 import "./SweetOffers.css";
-import { HeartIcon } from "../../Components/HeartIcon";
+import { HeartIcon } from "../../components/heartIcon";
 
 export function SweetOffers() {
   return (

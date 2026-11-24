@@ -6,7 +6,7 @@ import PumpkinCreamCheeseMuffin from "../../Visuals/sweets-to-order/pumpkin_crea
 import SweetBeignets from "../../Visuals/sweets-to-order/Sweet_Beignets.jpg";
 import SweetBlueBerryMuffins from "../../Visuals/sweets-to-order/Sweet_BlueBerryMuffins.jpg";
 import AlmondCreamCheesePoundCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
-import type { sweetOptionContract } from "./Contract";
+import type { sweetOptionContract } from "./contract";
 
 export const sweetOptions: sweetOptionContract[] = [
   {

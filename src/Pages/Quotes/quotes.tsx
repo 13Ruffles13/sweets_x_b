@@ -1,5 +1,5 @@
 import "./quotes.css";
-import { HeartIcon } from "../../Components/HeartIcon";
+import { HeartIcon } from "../../components/heartIcon";
 
 export function Quotes() {
   return (

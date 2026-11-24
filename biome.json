@@ -24,7 +24,11 @@
   },
   "linter": {
     "enabled": true,
-    "rules": { "preset": "none" },
+    "rules": {
+      "style": {
+        "useFilenamingConvention": "error"
+      }
+    },
     "includes": ["**", "!dist", "!coverage", "!cypress"]
   },
   "javascript": {

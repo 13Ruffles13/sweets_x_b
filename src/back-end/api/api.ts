@@ -1,5 +1,5 @@
 // Making API calls to the back-end service
-import SweetData from "../SweetData/SweetData";
+import SweetData from "../sweet-data/sweetData";
 
 console.log(SweetData);
 

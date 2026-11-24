@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import { CustomerOrders } from "./CustomerOrders/CustomerOrdersRoute";
+import { CustomerOrders } from "./CustomerOrders/customerOrdersRoute";
 import { MainHomeRoute } from "./Home/MainHomeRoute";
 
 export function AppRoutes() {

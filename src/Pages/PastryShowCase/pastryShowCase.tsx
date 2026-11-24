@@ -1,6 +1,6 @@
 import yellowCake from "../../Visuals/sweets-to-order/sweetsSugarPowderYellowCake.png";
 import "./pastryShowCase.css";
-import { HeartIcon } from "../../Components/HeartIcon";
+import { HeartIcon } from "../../components/heartIcon";
 
 export function PastryShowCase() {
   return (
