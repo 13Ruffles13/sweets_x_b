@@ -23,9 +23,9 @@ import { mount } from "cypress/react";
 // Alternatively, can be defined in cypress/support/component.d.ts
 // with a <reference path="./component" /> at the top of your spec.
 declare global {
-  // biome-ignore lint/style/noNamespace: Required for Cypress custom command typing
   namespace Cypress {
     interface Chainable {
+      /* Mounts a React component into the DOM. */
       mount: typeof mount;
     }
   }
